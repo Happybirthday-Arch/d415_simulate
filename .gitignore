@@ -1,0 +1,53 @@
+# ============================================================
+# 钢桥 / 磁吸小车 / D415 联合仿真仓库
+# 原则：只提交源码、配置、世界文件、模型网格、文档和验证报告。
+#       构建产物、运行时产物、大体积逐步日志一律不提交。
+# ============================================================
+
+# ---- 构建产物 ----
+build/
+install/
+log/
+*.o
+*.so
+CMakeCache.txt
+CMakeFiles/
+
+# ---- 运行时 / 录制产物 ----
+runtime/
+recordings/
+recordings_robot/
+*.db3
+*.mp4
+
+# ---- Python ----
+__pycache__/
+*.pyc
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.DS_Store
+
+# ---- 原始 CAD 备份：按约定完全不进 git（另有本地备份留存）----
+basic_model/
+
+# ---- 上游依赖：以 git submodule 管理 ----
+d415_sim_ws/src/gz_sensor_descriptions/
+
+# ---- 大体积验证产物：只保留 JSON 报告 ----
+# 逐步物理日志（单文件最大约 16 MB，合计约 126 MB）
+gazebo_robot/validation/**/*.csv
+d415_sim_ws/validation/**/*.csv
+# rosbag / 视频 / 日志
+gazebo_robot/validation/**/*.db3
+gazebo_robot/validation/**/*.mp4
+gazebo_robot/validation/**/*.log
+gazebo_robot/validation/integration/**/recordings/
+# 深度数组与派生模型网格（可由脚本重新生成）
+gazebo_robot/validation/**/*.npy
+d415_sim_ws/validation/**/*.npy
+gazebo_robot/validation/*_model.stl
+gazebo_robot/validation/*_collision_model.stl
+
+# ---- 大型独立验证产物目录（build.sh/validate_*.py 可重建）----
+gazebo_robot/validation/debug/
