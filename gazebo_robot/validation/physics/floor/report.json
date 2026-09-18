@@ -1,17 +1,17 @@
 {
   "name": "floor",
   "world": "robot_bench",
-  "seconds_requested": 60,
+  "seconds_requested": 3,
   "step": 0.001,
   "brake_fixture": true,
   "steering_torque_Nm": 0,
   "wheel_torque_Nm": 0,
   "initial_steering_speed_rad_s": 0,
   "returncode": 0,
-  "wall_seconds": 11.49022697800001,
+  "wall_seconds": 2.72159637599907,
   "expect": "attached",
-  "samples": 60000,
-  "final_time": 60.0,
+  "samples": 3000,
+  "final_time": 3.0,
   "complete": true,
   "max_steering_deg": 0.0013716205470598378,
   "force_min_N": [
@@ -23,24 +23,24 @@
     200.0
   ],
   "gap_range_m": [
-    -9.15787327492e-07,
-    -3.60409925168e-08
+    -9.07742281522e-07,
+    -1.33109212971e-07
   ],
   "final_position_m": [
-    3.82556182905e-06,
-    1.77046122535e-06,
+    3.82556162486e-06,
+    1.77046041137e-06,
     0.0314991365874
   ],
   "final_rpy_rad": [
-    5.74664933888e-07,
-    -1.43782925452e-06,
-    6.37808952475e-06
+    5.74690148006e-07,
+    -1.43783553346e-06,
+    6.37808890648e-06
   ],
   "wheel_angle_change_rad": [
-    2.7743919842077098e-11,
-    -2.8200499921404e-11
+    2.6761399485271002e-12,
+    -3.0459204880539997e-12
   ],
-  "contact_steps": 59500,
+  "contact_steps": 2500,
   "no_server_errors": true,
   "passed": true
 }

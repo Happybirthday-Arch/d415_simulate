@@ -1,0 +1,189 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "name": "floor",
+      "world": "robot_bench",
+      "seconds_requested": 3,
+      "step": 0.001,
+      "brake_fixture": true,
+      "steering_torque_Nm": 0,
+      "wheel_torque_Nm": 0,
+      "initial_steering_speed_rad_s": 0,
+      "returncode": 0,
+      "wall_seconds": 2.72159637599907,
+      "expect": "attached",
+      "samples": 3000,
+      "final_time": 3.0,
+      "complete": true,
+      "max_steering_deg": 0.0013716205470598378,
+      "force_min_N": [
+        200.0,
+        200.0
+      ],
+      "force_max_N": [
+        200.0,
+        200.0
+      ],
+      "gap_range_m": [
+        -9.07742281522e-07,
+        -1.33109212971e-07
+      ],
+      "final_position_m": [
+        3.82556162486e-06,
+        1.77046041137e-06,
+        0.0314991365874
+      ],
+      "final_rpy_rad": [
+        5.74690148006e-07,
+        -1.43783553346e-06,
+        6.37808890648e-06
+      ],
+      "wheel_angle_change_rad": [
+        2.6761399485271002e-12,
+        -3.0459204880539997e-12
+      ],
+      "contact_steps": 2500,
+      "no_server_errors": true,
+      "passed": true
+    },
+    {
+      "name": "wall",
+      "world": "adhesion_wall",
+      "seconds_requested": 3,
+      "step": 0.001,
+      "brake_fixture": true,
+      "steering_torque_Nm": 0,
+      "wheel_torque_Nm": 0,
+      "initial_steering_speed_rad_s": 0,
+      "returncode": 0,
+      "wall_seconds": 2.7207420710001315,
+      "expect": "attached",
+      "samples": 3000,
+      "final_time": 3.0,
+      "complete": true,
+      "max_steering_deg": 0.0013716205470598378,
+      "force_min_N": [
+        200.0,
+        200.0
+      ],
+      "force_max_N": [
+        200.0,
+        200.0
+      ],
+      "gap_range_m": [
+        -8.38956735333e-07,
+        -3.26155046582e-08
+      ],
+      "final_position_m": [
+        0.0314999654644,
+        1.69941561784e-06,
+        -1.38384014098e-05
+      ],
+      "final_rpy_rad": [
+        1.53802129195,
+        1.570792769,
+        1.53802130734
+      ],
+      "wheel_angle_change_rad": [
+        3.6800036054810774e-09,
+        3.547964420165896e-09
+      ],
+      "contact_steps": 2500,
+      "no_server_errors": true,
+      "passed": true
+    },
+    {
+      "name": "ceiling",
+      "world": "adhesion_ceiling",
+      "seconds_requested": 3,
+      "step": 0.001,
+      "brake_fixture": true,
+      "steering_torque_Nm": 0,
+      "wheel_torque_Nm": 0,
+      "initial_steering_speed_rad_s": 0,
+      "returncode": 0,
+      "wall_seconds": 2.721054499001184,
+      "expect": "attached",
+      "samples": 3000,
+      "final_time": 3.0,
+      "complete": true,
+      "max_steering_deg": 0.0013716205470598378,
+      "force_min_N": [
+        200.0,
+        200.0
+      ],
+      "force_max_N": [
+        200.0,
+        200.0
+      ],
+      "gap_range_m": [
+        -7.55218909097e-07,
+        -6.47169423211e-07
+      ],
+      "final_position_m": [
+        3.81683600791e-06,
+        -1.76625587682e-06,
+        -0.0314992988062
+      ],
+      "final_rpy_rad": [
+        -3.14159194533,
+        1.71484199373e-06,
+        -6.37818716448e-06
+      ],
+      "wheel_angle_change_rad": [
+        8.139951629401001e-13,
+        -1.1849480563410002e-12
+      ],
+      "contact_steps": 2500,
+      "no_server_errors": true,
+      "passed": true
+    },
+    {
+      "name": "slope",
+      "world": "adhesion_slope",
+      "seconds_requested": 3,
+      "step": 0.001,
+      "brake_fixture": true,
+      "steering_torque_Nm": 0,
+      "wheel_torque_Nm": 0,
+      "initial_steering_speed_rad_s": 0,
+      "returncode": 0,
+      "wall_seconds": 2.7209362760004296,
+      "expect": "attached",
+      "samples": 3000,
+      "final_time": 3.0,
+      "complete": true,
+      "max_steering_deg": 0.0013716205470598378,
+      "force_min_N": [
+        200.0,
+        200.0
+      ],
+      "force_max_N": [
+        200.0,
+        200.0
+      ],
+      "gap_range_m": [
+        -1.12260266334e-06,
+        -3.50702913654e-08
+      ],
+      "final_position_m": [
+        0.0222815968472,
+        1.69456413751e-06,
+        0.0222660792146
+      ],
+      "final_rpy_rad": [
+        3.39558923324e-06,
+        0.785398023528,
+        4.81835743709e-06
+      ],
+      "wheel_angle_change_rad": [
+        2.6033326689210774e-09,
+        2.5075060594958963e-09
+      ],
+      "contact_steps": 2500,
+      "no_server_errors": true,
+      "passed": true
+    }
+  ]
+}

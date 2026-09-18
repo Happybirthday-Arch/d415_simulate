@@ -1,19 +1,19 @@
 {
   "name": "bridge_seam",
   "world": "bridge_seam",
-  "seconds_requested": 3.0,
+  "seconds_requested": 3,
   "step": 0.001,
   "brake_fixture": true,
   "steering_torque_Nm": 0,
   "wheel_torque_Nm": 0,
   "initial_steering_speed_rad_s": 0,
   "returncode": 0,
-  "wall_seconds": 75.25380258800033,
+  "wall_seconds": 85.27708072499809,
   "expect": "attached",
   "samples": 3000,
   "final_time": 3.0,
   "complete": true,
-  "max_steering_deg": 0.3453254535270679,
+  "max_steering_deg": 0.34532539881246327,
   "force_min_N": [
     200.0,
     200.0
@@ -23,22 +23,22 @@
     200.0
   ],
   "gap_range_m": [
-    -3.34087817343e-05,
-    6.4419027847e-05
+    1.66601021115e-05,
+    8.80923181719e-05
   ],
   "final_position_m": [
     -8.96347905412,
-    -2.60592027184,
-    1.4999802867
+    -2.60592027201,
+    1.49998028667
   ],
   "final_rpy_rad": [
-    1.54169031609,
-    1.56712997695,
-    1.53809789584
+    1.54169027081,
+    1.56712997779,
+    1.5380978562
   ],
   "wheel_angle_change_rad": [
-    -6.22436116865506e-07,
-    2.11224012489401e-07
+    -6.224418920585059e-07,
+    2.11220570674401e-07
   ],
   "contact_steps": 2500,
   "no_server_errors": true,

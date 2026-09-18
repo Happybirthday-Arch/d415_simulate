@@ -53,7 +53,7 @@ class RobotDriveController : public sim::System, public sim::ISystemConfigure,
    rate=get("rpm_slew",30)*2*M_PI/60;steerRate=get("steer_slew_deg",30)*M_PI/180;
    timeout=get("timeout",timeout);wheelLimit=get("wheel_torque",wheelLimit);steerTorque=get("steer_torque",steerTorque);
    kp=get("wheel_kp",kp);ki=get("wheel_ki",ki);skp=get("steer_kp",skp);skd=get("steer_kd",skd);ski=get("steer_ki",ski);
-   if(!(rpm>0&&rpm<=15&&steerLimit>0&&steerLimit<=14*M_PI/180&&rate>0&&steerRate>0&&timeout>0&&wheelLimit>0&&steerTorque>0))
+   if(!(rpm>0&&rpm<=30&&steerLimit>0&&steerLimit<=14*M_PI/180&&rate>0&&steerRate>0&&timeout>0&&wheelLimit>0&&steerTorque>0))
      throw std::runtime_error("Invalid drive limits");
    node.Subscribe("/robot/drive_command",&RobotDriveController::Command,this);
    states=node.Advertise<ignition::msgs::Model>("/robot/joint_states");

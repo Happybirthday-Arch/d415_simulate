@@ -1,8 +1,8 @@
-rpm: 15.0
+rpm: 30.0
 steer_deg: 14.0
 rpm_slew: 30.0
 steer_slew_deg: 30.0
-wheel_torque: 0.8
+wheel_torque: 6.4
 steer_torque: 5.0
 wheel_kp: 0.08
 wheel_ki: 0.8

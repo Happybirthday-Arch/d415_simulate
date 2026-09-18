@@ -1,19 +1,19 @@
 {
   "name": "bridge_right_wall",
   "world": "bridge_right_wall",
-  "seconds_requested": 3.0,
+  "seconds_requested": 3,
   "step": 0.001,
   "brake_fixture": true,
   "steering_torque_Nm": 0,
   "wheel_torque_Nm": 0,
   "initial_steering_speed_rad_s": 0,
   "returncode": 0,
-  "wall_seconds": 5.728989852000268,
+  "wall_seconds": 13.747021955998207,
   "expect": "attached",
   "samples": 3000,
   "final_time": 3.0,
   "complete": true,
-  "max_steering_deg": 0.08055687291973308,
+  "max_steering_deg": 0.08055651299910534,
   "force_min_N": [
     200.0,
     200.0
@@ -23,22 +23,22 @@
     200.0
   ],
   "gap_range_m": [
-    -7.96904582234e-05,
-    -2.16373793674e-08
+    -7.97077256098e-05,
+    -1.2428073376e-08
   ],
   "final_position_m": [
-    8.96351101117,
+    8.96351101105,
     -1.49999237008,
-    1.50000375782
+    1.50000375777
   ],
   "final_rpy_rad": [
-    0.601071217263,
-    -1.57041906428,
-    -0.601070558238
+    0.601071763444,
+    -1.57041906814,
+    -0.601071104571
   ],
   "wheel_angle_change_rad": [
-    6.632142444261993e-10,
-    -7.88844959482798e-09
+    6.610893626831994e-10,
+    -7.889790184257981e-09
   ],
   "contact_steps": 2500,
   "no_server_errors": true,

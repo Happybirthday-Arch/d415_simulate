@@ -1,17 +1,17 @@
 {
   "name": "ceiling",
   "world": "adhesion_ceiling",
-  "seconds_requested": 60,
+  "seconds_requested": 3,
   "step": 0.001,
   "brake_fixture": true,
   "steering_torque_Nm": 0,
   "wheel_torque_Nm": 0,
   "initial_steering_speed_rad_s": 0,
   "returncode": 0,
-  "wall_seconds": 11.589649250000093,
+  "wall_seconds": 2.721054499001184,
   "expect": "attached",
-  "samples": 60000,
-  "final_time": 60.0,
+  "samples": 3000,
+  "final_time": 3.0,
   "complete": true,
   "max_steering_deg": 0.0013716205470598378,
   "force_min_N": [
@@ -23,24 +23,24 @@
     200.0
   ],
   "gap_range_m": [
-    -7.65133848828e-07,
-    -3.15261271949e-08
+    -7.55218909097e-07,
+    -6.47169423211e-07
   ],
   "final_position_m": [
-    3.81683625192e-06,
-    -1.76625685611e-06,
+    3.81683600791e-06,
+    -1.76625587682e-06,
     -0.0314992988062
   ],
   "final_rpy_rad": [
-    -3.14159194536,
-    1.71483445322e-06,
-    -6.37818779075e-06
+    -3.14159194533,
+    1.71484199373e-06,
+    -6.37818716448e-06
   ],
   "wheel_angle_change_rad": [
-    -9.264143355222899e-12,
-    9.311807186439e-12
+    8.139951629401001e-13,
+    -1.1849480563410002e-12
   ],
-  "contact_steps": 59500,
+  "contact_steps": 2500,
   "no_server_errors": true,
   "passed": true
 }

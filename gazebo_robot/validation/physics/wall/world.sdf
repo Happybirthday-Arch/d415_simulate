@@ -21,6 +21,101 @@
       <diffuse>0.9 0.9 0.9 1</diffuse>
       <direction>-0.5 -0.4 -1</direction>
     </light>
+    <gui fullscreen="false">
+      <plugin filename="MinimalScene" name="3D View">
+        <ignition-gui>
+          <title>3D View</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">docked</property>
+        </ignition-gui>
+        <engine>ogre2</engine>
+        <scene>scene</scene>
+        <ambient_light>0.65 0.65 0.65</ambient_light>
+        <background_color>0.15 0.18 0.22</background_color>
+        <camera_pose>0.25 -0.3 0.23 0 0.43 2.2655346</camera_pose>
+        <camera_clip>
+          <near>0.005</near>
+          <far>100</far>
+        </camera_clip>
+      </plugin>
+      <plugin filename="GzSceneManager" name="Scene Manager">
+        <ignition-gui>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">floating</property>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="width">5</property>
+          <property type="double" key="height">5</property>
+        </ignition-gui>
+      </plugin>
+      <plugin filename="InteractiveViewControl" name="View Control">
+        <ignition-gui>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">floating</property>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="width">5</property>
+          <property type="double" key="height">5</property>
+        </ignition-gui>
+      </plugin>
+      <plugin filename="CameraTracking" name="Camera Tracking">
+        <ignition-gui>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">floating</property>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="width">5</property>
+          <property type="double" key="height">5</property>
+        </ignition-gui>
+      </plugin>
+      <plugin filename="EntityContextMenuPlugin" name="Context Menu">
+        <ignition-gui>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">floating</property>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="width">5</property>
+          <property type="double" key="height">5</property>
+        </ignition-gui>
+      </plugin>
+      <plugin filename="WorldControl" name="World Control">
+        <ignition-gui>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">floating</property>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="width">120</property>
+          <property type="double" key="height">70</property>
+          <property type="double" key="z">1</property>
+          <anchors target="3D View">
+            <line own="left" target="left" />
+            <line own="bottom" target="bottom" />
+          </anchors>
+        </ignition-gui>
+        <play_pause>true</play_pause>
+        <step>true</step>
+        <start_paused>false</start_paused>
+        <use_event>true</use_event>
+      </plugin>
+      <plugin filename="WorldStats" name="World Stats">
+        <ignition-gui>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">floating</property>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="width">260</property>
+          <property type="double" key="height">110</property>
+          <property type="double" key="z">1</property>
+          <anchors target="3D View">
+            <line own="right" target="right" />
+            <line own="bottom" target="bottom" />
+          </anchors>
+        </ignition-gui>
+        <sim_time>true</sim_time>
+        <real_time>true</real_time>
+        <real_time_factor>true</real_time_factor>
+        <iterations>true</iterations>
+      </plugin>
+      <plugin filename="EntityTree" name="Entity Tree">
+        <ignition-gui>
+          <property type="bool" key="showTitleBar">false</property>
+        </ignition-gui>
+      </plugin>
+    </gui>
     <model name="steel_plate">
       <static>true</static>
       <pose>0 0 0 0 1.570796326794897 0</pose>

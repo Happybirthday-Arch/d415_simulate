@@ -88,8 +88,6 @@
         </surface>
       </collision>
     </link>
-
-
     <link name="front_steering_link">
       <pose>0.026000008737 0 0.046999994064 0 0 0</pose>
       <self_collide>true</self_collide>
@@ -190,8 +188,6 @@
         </surface>
       </collision>
     </link>
-
-
     <link name="front_wheel_link">
       <pose>0.03499999999995763 1.617955838299767e-06 -5.996107468181355e-09 0 0 0</pose>
       <self_collide>true</self_collide>
@@ -292,8 +288,6 @@
         </contact>
       </sensor>
     </link>
-
-
     <link name="rear_wheel_link">
       <pose>-0.0350000000000369 -1.617956804502579e-06 5.99548568083752e-09 0 0 0</pose>
       <self_collide>true</self_collide>
@@ -394,8 +388,6 @@
         </contact>
       </sensor>
     </link>
-
-
     <joint name="front_steering_joint" type="revolute">
       <parent>base_link</parent>
       <child>front_steering_link</child>
@@ -410,7 +402,6 @@
         </limit>
       </axis>
     </joint>
-
     <joint name="front_wheel_joint" type="revolute">
       <parent>front_steering_link</parent>
       <child>front_wheel_link</child>
@@ -421,7 +412,6 @@
         </dynamics>
       </axis>
     </joint>
-
     <joint name="rear_wheel_joint" type="revolute">
       <parent>base_link</parent>
       <child>rear_wheel_link</child>
@@ -432,7 +422,6 @@
         </dynamics>
       </axis>
     </joint>
-    
     <plugin filename="libMagneticRobot.so" name="magnetic_robot::MagneticAdhesion">
       <force_per_wheel>200.0</force_per_wheel>
       <capture_gap>0.0005</capture_gap>
