@@ -1,0 +1,10 @@
+{
+  "pause_time_static": true,
+  "pause_stale_command_blocked": true,
+  "reset_stale_command_blocked": true,
+  "neutral_rearm": true,
+  "sensors_resume_after_reset": true,
+  "reset_video_segments": 2,
+  "encoder_error": null,
+  "passed": true
+}

@@ -1,0 +1,572 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.7">
+  <world name="bridge_robot">
+    <gravity>0 0 -9.81</gravity>
+    <physics name="dart" type="ignored">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+    </physics>
+    <plugin filename="ignition-gazebo-physics-system" name="ignition::gazebo::systems::Physics">
+      <engine>ignition-physics-dartsim-plugin</engine>
+    </plugin>
+    <plugin filename="ignition-gazebo-contact-system" name="ignition::gazebo::systems::Contact" />
+    <plugin filename="ignition-gazebo-user-commands-system" name="ignition::gazebo::systems::UserCommands" />
+    <plugin filename="ignition-gazebo-scene-broadcaster-system" name="ignition::gazebo::systems::SceneBroadcaster" />
+    <scene>
+      <ambient>0.65 0.65 0.65 1</ambient>
+      <background>0.15 0.18 0.22 1</background>
+    </scene>
+    <light name="sun" type="directional">
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.9 0.9 0.9 1</diffuse>
+      <direction>-0.5 -0.4 -1</direction>
+    </light>
+    <gui fullscreen="false">
+      <plugin filename="MinimalScene" name="3D View">
+        <ignition-gui>
+          <title>3D View</title>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">docked</property>
+        </ignition-gui>
+        <engine>ogre2</engine>
+        <scene>scene</scene>
+        <ambient_light>0.65 0.65 0.65</ambient_light>
+        <background_color>0.15 0.18 0.22</background_color>
+        <camera_pose>0.3 -1.8 0.24 0 0.4 2.35619449</camera_pose>
+        <camera_clip>
+          <near>0.005</near>
+          <far>100</far>
+        </camera_clip>
+      </plugin>
+      <plugin filename="GzSceneManager" name="Scene Manager">
+        <ignition-gui>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">floating</property>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="width">5</property>
+          <property type="double" key="height">5</property>
+        </ignition-gui>
+      </plugin>
+      <plugin filename="InteractiveViewControl" name="View Control">
+        <ignition-gui>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">floating</property>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="width">5</property>
+          <property type="double" key="height">5</property>
+        </ignition-gui>
+      </plugin>
+      <plugin filename="CameraTracking" name="Camera Tracking">
+        <ignition-gui>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">floating</property>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="width">5</property>
+          <property type="double" key="height">5</property>
+        </ignition-gui>
+      </plugin>
+      <plugin filename="EntityContextMenuPlugin" name="Context Menu">
+        <ignition-gui>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">floating</property>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="width">5</property>
+          <property type="double" key="height">5</property>
+        </ignition-gui>
+      </plugin>
+      <plugin filename="WorldControl" name="World Control">
+        <ignition-gui>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">floating</property>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="width">120</property>
+          <property type="double" key="height">70</property>
+          <property type="double" key="z">1</property>
+          <anchors target="3D View">
+            <line own="left" target="left" />
+            <line own="bottom" target="bottom" />
+          </anchors>
+        </ignition-gui>
+        <play_pause>true</play_pause>
+        <step>true</step>
+        <start_paused>false</start_paused>
+        <use_event>true</use_event>
+      </plugin>
+      <plugin filename="WorldStats" name="World Stats">
+        <ignition-gui>
+          <property type="bool" key="showTitleBar">false</property>
+          <property type="string" key="state">floating</property>
+          <property type="bool" key="resizable">false</property>
+          <property type="double" key="width">260</property>
+          <property type="double" key="height">110</property>
+          <property type="double" key="z">1</property>
+          <anchors target="3D View">
+            <line own="right" target="right" />
+            <line own="bottom" target="bottom" />
+          </anchors>
+        </ignition-gui>
+        <sim_time>true</sim_time>
+        <real_time>true</real_time>
+        <real_time_factor>true</real_time_factor>
+        <iterations>true</iterations>
+      </plugin>
+      <plugin filename="EntityTree" name="Entity Tree">
+        <ignition-gui>
+          <property type="bool" key="showTitleBar">false</property>
+        </ignition-gui>
+      </plugin>
+    </gui>
+    <include>
+      <uri>model://bridge</uri>
+      <pose>0 0 0 1.570796326794897 0 0</pose>
+    </include>
+    <model name="magnetic_robot">
+      <static>false</static>
+      <self_collide>true</self_collide>
+      <link name="base_link">
+        <pose>0 0 0 0 0 0</pose>
+        <self_collide>true</self_collide>
+        <inertial>
+          <pose>-0.01669640313236539 0.02143332896454504 0.02952235075090278 0 0 0</pose>
+          <mass>0.7962190308204766</mass>
+          <inertia>
+            <ixx>0.001831987699753752</ixx>
+            <iyy>0.001285332298115545</iyy>
+            <izz>0.001880155508218689</izz>
+            <ixy>0.00030023215367392</ixy>
+            <ixz>-0.000347314379692567</ixz>
+            <iyz>0.000466609169345381</iyz>
+          </inertia>
+        </inertial>
+        <visual name="robot_chassis_visual">
+          <geometry>
+            <mesh>
+              <uri>model://magnetic_robot/meshes/robot_chassis.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.7 0.72 0.76 1</ambient>
+            <diffuse>0.7 0.72 0.76 1</diffuse>
+            <specular>0.15 0.15 0.15 1</specular>
+          </material>
+        </visual>
+        <collision name="robot_chassis_collision_0">
+          <geometry>
+            <mesh>
+              <uri>model://magnetic_robot/meshes/robot_chassis_collision_0.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.8</mu>
+                <mu2>0.8</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="robot_chassis_collision_1">
+          <geometry>
+            <mesh>
+              <uri>model://magnetic_robot/meshes/robot_chassis_collision_1.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.8</mu>
+                <mu2>0.8</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="rear_motor_visual">
+          <geometry>
+            <mesh>
+              <uri>model://magnetic_robot/meshes/rear_motor.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.25 0.32 0.4 1</ambient>
+            <diffuse>0.25 0.32 0.4 1</diffuse>
+            <specular>0.15 0.15 0.15 1</specular>
+          </material>
+        </visual>
+        <collision name="rear_motor_collision_0">
+          <geometry>
+            <mesh>
+              <uri>model://magnetic_robot/meshes/rear_motor_collision_0.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.8</mu>
+                <mu2>0.8</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+      </link>
+      <link name="front_steering_link">
+        <pose>0.026000008737 0 0.046999994064 0 0 0</pose>
+        <self_collide>true</self_collide>
+        <inertial>
+          <pose>0.00592058993996759 -0.03297798702958531 -0.03390483603737569 0 0 0</pose>
+          <mass>0.5037809691795236</mass>
+          <inertia>
+            <ixx>0.0005671879949864165</ixx>
+            <iyy>0.0003699582437427575</iyy>
+            <izz>0.0004211826425839693</izz>
+            <ixy>4.263925063058334e-05</ixy>
+            <ixz>4.064454209028947e-05</ixz>
+            <iyz>-0.0001971887272466101</iyz>
+          </inertia>
+        </inertial>
+        <visual name="front_steering_visual">
+          <geometry>
+            <mesh>
+              <uri>model://magnetic_robot/meshes/front_steering.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.7 0.72 0.76 1</ambient>
+            <diffuse>0.7 0.72 0.76 1</diffuse>
+            <specular>0.15 0.15 0.15 1</specular>
+          </material>
+        </visual>
+        <collision name="front_steering_collision_0">
+          <geometry>
+            <mesh>
+              <uri>model://magnetic_robot/meshes/front_steering_collision_0.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.8</mu>
+                <mu2>0.8</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="front_steering_collision_1">
+          <geometry>
+            <mesh>
+              <uri>model://magnetic_robot/meshes/front_steering_collision_1.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.8</mu>
+                <mu2>0.8</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <collision name="front_steering_collision_2">
+          <geometry>
+            <mesh>
+              <uri>model://magnetic_robot/meshes/front_steering_collision_2.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.8</mu>
+                <mu2>0.8</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="front_motor_visual">
+          <geometry>
+            <mesh>
+              <uri>model://magnetic_robot/meshes/front_motor.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.25 0.32 0.4 1</ambient>
+            <diffuse>0.25 0.32 0.4 1</diffuse>
+            <specular>0.15 0.15 0.15 1</specular>
+          </material>
+        </visual>
+        <collision name="front_motor_collision_0">
+          <geometry>
+            <mesh>
+              <uri>model://magnetic_robot/meshes/front_motor_collision_0.stl</uri>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.8</mu>
+                <mu2>0.8</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+      </link>
+      <link name="front_wheel_link">
+        <pose>0.03499999999995763 1.617955838299767e-06 -5.996107468181355e-09 0 0 0</pose>
+        <self_collide>true</self_collide>
+        <inertial>
+          <pose>1.564440664862665e-05 4.041569127597572e-06 -4.522740683739132e-05 0 0 0</pose>
+          <mass>0.7</mass>
+          <inertia>
+            <ixx>0.0002511333880876556</ixx>
+            <iyy>0.0003773690251926861</iyy>
+            <izz>0.0002514085933266564</izz>
+            <ixy>4.425863834136158e-11</ixy>
+            <ixz>-1.081309487650233e-07</ixz>
+            <iyz>-1.279616102240571e-10</iyz>
+          </inertia>
+        </inertial>
+        <visual name="front_wheel_visual">
+          <geometry>
+            <mesh>
+              <uri>model://magnetic_robot/meshes/front_wheel.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.12 0.14 0.16 1</ambient>
+            <diffuse>0.12 0.14 0.16 1</diffuse>
+            <specular>0.15 0.15 0.15 1</specular>
+          </material>
+        </visual>
+        <collision name="front_wheel_band_0">
+          <pose>0 -0.009500000000000001 0 1.570796326794897 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.0315</radius>
+              <length>0.0135</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.8</mu>
+                <mu2>0.8</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <sensor name="front_wheel_contact_0" type="contact">
+          <always_on>true</always_on>
+          <update_rate>0</update_rate>
+          <contact>
+            <collision>front_wheel_band_0</collision>
+          </contact>
+        </sensor>
+        <collision name="front_wheel_band_1">
+          <pose>0 -0.0002500000000000002 0 1.570796326794897 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.03</radius>
+              <length>0.004999999999999999</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.8</mu>
+                <mu2>0.8</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <sensor name="front_wheel_contact_1" type="contact">
+          <always_on>true</always_on>
+          <update_rate>0</update_rate>
+          <contact>
+            <collision>front_wheel_band_1</collision>
+          </contact>
+        </sensor>
+        <collision name="front_wheel_band_2">
+          <pose>0 0.009250000000000001 0 1.570796326794897 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.0315</radius>
+              <length>0.014000000000000002</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.8</mu>
+                <mu2>0.8</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <sensor name="front_wheel_contact_2" type="contact">
+          <always_on>true</always_on>
+          <update_rate>0</update_rate>
+          <contact>
+            <collision>front_wheel_band_2</collision>
+          </contact>
+        </sensor>
+      </link>
+      <link name="rear_wheel_link">
+        <pose>-0.0350000000000369 -1.617956804502579e-06 5.99548568083752e-09 0 0 0</pose>
+        <self_collide>true</self_collide>
+        <inertial>
+          <pose>-1.56444271777606e-05 -4.04142573180163e-06 -4.52275795241891e-05 0 0 0</pose>
+          <mass>0.7</mass>
+          <inertia>
+            <ixx>0.0002511333886283832</ixx>
+            <iyy>0.000377369027113465</iyy>
+            <izz>0.0002514085950839763</izz>
+            <ixy>4.42564751284985e-11</ixy>
+            <ixz>1.08132728313764e-07</ixz>
+            <iyz>1.279616482848986e-10</iyz>
+          </inertia>
+        </inertial>
+        <visual name="rear_wheel_visual">
+          <geometry>
+            <mesh>
+              <uri>model://magnetic_robot/meshes/rear_wheel.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.12 0.14 0.16 1</ambient>
+            <diffuse>0.12 0.14 0.16 1</diffuse>
+            <specular>0.15 0.15 0.15 1</specular>
+          </material>
+        </visual>
+        <collision name="rear_wheel_band_0">
+          <pose>0 0.009500000000000001 0 1.570796326794897 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.0315</radius>
+              <length>0.0135</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.8</mu>
+                <mu2>0.8</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <sensor name="rear_wheel_contact_0" type="contact">
+          <always_on>true</always_on>
+          <update_rate>0</update_rate>
+          <contact>
+            <collision>rear_wheel_band_0</collision>
+          </contact>
+        </sensor>
+        <collision name="rear_wheel_band_1">
+          <pose>0 0.0002500000000000002 0 1.570796326794897 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.03</radius>
+              <length>0.004999999999999999</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.8</mu>
+                <mu2>0.8</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <sensor name="rear_wheel_contact_1" type="contact">
+          <always_on>true</always_on>
+          <update_rate>0</update_rate>
+          <contact>
+            <collision>rear_wheel_band_1</collision>
+          </contact>
+        </sensor>
+        <collision name="rear_wheel_band_2">
+          <pose>0 -0.009250000000000001 0 1.570796326794897 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.0315</radius>
+              <length>0.014000000000000002</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>0.8</mu>
+                <mu2>0.8</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <sensor name="rear_wheel_contact_2" type="contact">
+          <always_on>true</always_on>
+          <update_rate>0</update_rate>
+          <contact>
+            <collision>rear_wheel_band_2</collision>
+          </contact>
+        </sensor>
+      </link>
+      <joint name="front_steering_joint" type="revolute">
+        <parent>base_link</parent>
+        <child>front_steering_link</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <dynamics>
+            <damping>0.02</damping>
+          </dynamics>
+          <limit>
+            <lower>-0.26005405854715513</lower>
+            <upper>0.26005405854715513</upper>
+          </limit>
+        </axis>
+      </joint>
+      <joint name="front_wheel_joint" type="revolute">
+        <parent>front_steering_link</parent>
+        <child>front_wheel_link</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <dynamics>
+            <damping>0.0001</damping>
+          </dynamics>
+        </axis>
+      </joint>
+      <joint name="rear_wheel_joint" type="revolute">
+        <parent>base_link</parent>
+        <child>rear_wheel_link</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <dynamics>
+            <damping>0.0001</damping>
+          </dynamics>
+        </axis>
+      </joint>
+      <plugin filename="libMagneticRobot.so" name="magnetic_robot::MagneticAdhesion">
+        <force_per_wheel>200.0</force_per_wheel>
+        <capture_gap>0.0005</capture_gap>
+        <release_gap>0.001</release_gap>
+        <default_surface_model>bridge</default_surface_model>
+        <default_surface_file>surfaces/bridge.stl</default_surface_file>
+        <surface>
+          <model>bridge</model>
+          <file>surfaces/bridge.stl</file>
+        </surface>
+      </plugin>
+      <plugin filename="libMagneticRobot.so" name="magnetic_robot::SteeringLimitMonitor">
+        <hard_limit>0.2617993877991494</hard_limit>
+      </plugin>
+      <pose>0 -1.5 0.0416 0 0 1.570796326794897</pose>
+    </model>
+    <light name="inspection_light" type="point">
+      <pose>0 -1.5 1 0 0 0</pose>
+      <diffuse>0.9 0.9 0.9 1</diffuse>
+      <attenuation>
+        <range>10</range>
+        <constant>0.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+    </light>
+  </world>
+</sdf>

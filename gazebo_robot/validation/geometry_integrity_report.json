@@ -1,0 +1,59 @@
+{
+  "alignment_max_error_m": {
+    "robot_chassis": 3.0672789586017046e-09,
+    "rear_motor": 3.702669462701813e-09,
+    "front_steering": 3.6954879781281313e-09,
+    "front_motor": 3.702669462701813e-09,
+    "front_wheel": 1.7607396374241802e-09,
+    "rear_wheel": 1.7775826227639513e-09
+  },
+  "total_mass_kg": 2.7,
+  "inertias": {
+    "base_link": {
+      "mass_kg": 0.7962190308204766,
+      "principal_inertias": [
+        0.0008391620223791329,
+        0.0019206546090163481,
+        0.002237658874692506
+      ],
+      "valid": true
+    },
+    "front_steering_link": {
+      "mass_kg": 0.5037809691795236,
+      "principal_inertias": [
+        0.000187598404217904,
+        0.0005760107418365458,
+        0.0005947197352586935
+      ],
+      "valid": true
+    },
+    "front_wheel_link": {
+      "mass_kg": 0.7,
+      "principal_inertias": [
+        0.0002510959856130182,
+        0.0002514459958011482,
+        0.00037736902519283156
+      ],
+      "valid": true
+    },
+    "rear_wheel_link": {
+      "mass_kg": 0.7,
+      "principal_inertias": [
+        0.0002510959851842138,
+        0.00025144599852800013,
+        0.00037736902711361047
+      ],
+      "valid": true
+    }
+  },
+  "bearing_axis_fit": {
+    "cad_x_z_m": [
+      0.004999990657476721,
+      0.005886110205113723
+    ],
+    "outer_radius_m": 0.025999999997939005,
+    "points": 94,
+    "max_radial_residual_m": 1.855820629115268e-09
+  },
+  "passed": true
+}

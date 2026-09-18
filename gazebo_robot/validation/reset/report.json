@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "service_response": "data: true",
+  "time_reset_observed": true,
+  "backward_time_indices": [
+    657
+  ],
+  "final_time": 2.904,
+  "after_reset_samples": 2905
+}

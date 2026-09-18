@@ -1,0 +1,6 @@
+support_length: 0.030
+support_diameter: 0.010
+support_density: 2700.0
+support_bottom: [0.04213, 0.0, 0.057]
+camera_mass: 0.072
+preserve_total_mass: true

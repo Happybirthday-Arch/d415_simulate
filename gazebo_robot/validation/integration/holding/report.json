@@ -1,0 +1,29 @@
+{
+  "adhesion_slope": {
+    "seconds": 61.0,
+    "max_drift_after_settle_m": 4.718075533343274e-06,
+    "last_10s_drift_m": 7.627889236731975e-07,
+    "min_front_force": 200.0,
+    "min_rear_force": 200.0,
+    "max_steer_deg": 0.007580955912519701,
+    "passed": true
+  },
+  "adhesion_wall": {
+    "seconds": 61.0,
+    "max_drift_after_settle_m": 6.9830984904368415e-06,
+    "last_10s_drift_m": 1.0909268176262006e-06,
+    "min_front_force": 200.0,
+    "min_rear_force": 200.0,
+    "max_steer_deg": 0.010243156061225566,
+    "passed": true
+  },
+  "adhesion_ceiling": {
+    "seconds": 61.0,
+    "max_drift_after_settle_m": 1.0710350848343448e-06,
+    "last_10s_drift_m": 6.471093168117826e-08,
+    "min_front_force": 200.0,
+    "min_rear_force": 200.0,
+    "max_steer_deg": 0.0035761920704290573,
+    "passed": true
+  }
+}

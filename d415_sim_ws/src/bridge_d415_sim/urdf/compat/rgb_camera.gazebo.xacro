@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!-- Derived from locusrobotics/gz_sensor_descriptions bf438856e58ec0af2ff2be04066b6942a77eadf3.
+     BSD-3-Clause; see LICENSE.locus.txt. Local changes: independent frames,
+     configurable clipping, camera_info topic, duplicate parameter removed.
+     Upstream comments below describe original limitations; see README for this adapter. -->
+<robot name="gazebo_rgb" xmlns:xacro="http://www.ros.org/wiki/xacro" xmlns:gz="http://gazebosim.org/schema">
+
+<!--
+Gazebo plugins can only be included once so this xacro assumes that a parent will include and configure them.
+This xacro requires Gazebo plugin:
+  - gz::sim::systems::Sensors
+  to publish simulated RGB camera data
+
+For example:
+<gazebo>
+  <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+    <render_engine>ogre2</render_engine>
+  </plugin>
+</gazebo>
+-->
+<xacro:macro name="gazebo_rgb" params="
+  name:=camera
+  fps:=15
+  triggered:=false
+  gz_topic_name:=camera
+  image_width:=1280
+  image_height:=720
+  h_fov
+  v_fov
+  frame:=${name}_color_frame
+  optical_frame:=${name}_color_optical_frame
+  near:=0.01
+  far:=10.0">
+
+    <!--
+    Assumptions
+    Standard Gazebo RGB sensor in the same location as the physical camera.
+    If you set the Lense parameters like we do in the RGBD camera the lighting renders incorrectly.
+    -->
+
+    <gazebo reference="${frame}">
+        <sensor name="${name}" type="camera">
+          <camera>
+              <camera_info_topic>${gz_topic_name}/camera_info</camera_info_topic>
+              <horizontal_fov>${h_fov}</horizontal_fov>
+              <image>
+                <width>${image_width}</width>
+                <height>${image_height}</height>
+                <format>RGB_INT8</format>
+              </image>
+              <clip>
+                <near>${near}</near>
+                <far>${far}</far>
+              </clip>
+              <!-- Ideal undistorted pinhole; no unsupported Ogre2 distortion pass. -->
+              <noise>
+                <type>gaussian</type>
+                <mean>0</mean>
+                <stddev>0.00</stddev>
+              </noise>
+              <!-- TODO this term is deprecated but behaves better than setting
+                  '<gz_frame_id>${optical_frame}</gz_frame_id>'
+                  in the <sensor> namespace -->
+              <optical_frame_id>${optical_frame}</optical_frame_id>
+              <triggered>${triggered}</triggered>
+              <trigger_topic>${name}/trigger</trigger_topic>
+          </camera>
+          <!-- <gz_frame_id>${optical_frame}</gz_frame_id> -->
+          <always_on>1</always_on>
+          <update_rate>${fps}</update_rate>
+          <topic>${gz_topic_name}/image</topic>
+          <enable_metrics>false</enable_metrics>
+        </sensor>
+    </gazebo>
+
+</xacro:macro>
+</robot>

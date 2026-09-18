@@ -1,0 +1,46 @@
+{
+  "name": "bridge_ceiling",
+  "world": "bridge_ceiling",
+  "seconds_requested": 3.0,
+  "step": 0.001,
+  "brake_fixture": true,
+  "steering_torque_Nm": 0,
+  "wheel_torque_Nm": 0,
+  "initial_steering_speed_rad_s": 0,
+  "returncode": 0,
+  "wall_seconds": 12.998559319999913,
+  "expect": "attached",
+  "samples": 3000,
+  "final_time": 3.0,
+  "complete": true,
+  "max_steering_deg": 0.0001839752199357759,
+  "force_min_N": [
+    199.961028402,
+    199.961028402
+  ],
+  "force_max_N": [
+    199.961028402,
+    199.961028402
+  ],
+  "gap_range_m": [
+    2.56671209453e-05,
+    4.437826633e-05
+  ],
+  "final_position_m": [
+    3.76498751311e-06,
+    -1.50000005632,
+    2.95617702819
+  ],
+  "final_rpy_rad": [
+    -3.14158622845,
+    1.91554034861e-06,
+    1.57079975188
+  ],
+  "wheel_angle_change_rad": [
+    -1.10247358464448e-12,
+    1.04255025446359e-12
+  ],
+  "contact_steps": 2500,
+  "no_server_errors": true,
+  "passed": true
+}

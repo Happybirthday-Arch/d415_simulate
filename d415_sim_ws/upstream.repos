@@ -1,0 +1,5 @@
+repositories:
+  gz_sensor_descriptions:
+    type: git
+    url: https://github.com/locusrobotics/gz_sensor_descriptions.git
+    version: bf438856e58ec0af2ff2be04066b6942a77eadf3

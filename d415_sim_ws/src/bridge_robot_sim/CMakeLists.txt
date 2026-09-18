@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.8)
+project(bridge_robot_sim)
+find_package(ament_cmake REQUIRED)
+install(DIRECTORY launch config rviz DESTINATION share/${PROJECT_NAME})
+install(FILES README.md DESTINATION share/${PROJECT_NAME})
+install(PROGRAMS scripts/generate_assembly.py scripts/keyboard_drive.py scripts/state_tf.py scripts/record_rgb.py scripts/record_full.py DESTINATION lib/${PROJECT_NAME})
+ament_package()

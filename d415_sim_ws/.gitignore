@@ -1,0 +1,6 @@
+build/
+install/
+log/
+recordings/
+runtime/
+__pycache__/

@@ -1,0 +1,11 @@
+{
+  "w_target_rpm": 14.910000000000105,
+  "wa_target_deg": 14.0,
+  "released_rpm": 0.0,
+  "focus_loss_rpm": 0.0,
+  "space_locked": true,
+  "enter_unlocked": true,
+  "gazebo_screenshot": true,
+  "rviz_screenshot": true,
+  "passed": true
+}

@@ -1,0 +1,139 @@
+--- upstream/rgb_camera.gazebo.xacro
++++ compat/rgb_camera.gazebo.xacro
+@@ -1,4 +1,8 @@
+ <?xml version="1.0"?>
++<!-- Derived from locusrobotics/gz_sensor_descriptions bf438856e58ec0af2ff2be04066b6942a77eadf3.
++     BSD-3-Clause; see LICENSE.locus.txt. Local changes: independent frames,
++     configurable clipping, camera_info topic, duplicate parameter removed.
++     Upstream comments below describe original limitations; see README for this adapter. -->
+ <robot name="gazebo_rgb" xmlns:xacro="http://www.ros.org/wiki/xacro" xmlns:gz="http://gazebosim.org/schema">
+ 
+ <!--
+@@ -22,7 +26,11 @@
+   image_width:=1280
+   image_height:=720
+   h_fov
+-  v_fov">
++  v_fov
++  frame:=${name}_color_frame
++  optical_frame:=${name}_color_optical_frame
++  near:=0.01
++  far:=10.0">
+ 
+     <!--
+     Assumptions
+@@ -30,9 +38,10 @@
+     If you set the Lense parameters like we do in the RGBD camera the lighting renders incorrectly.
+     -->
+ 
+-    <gazebo reference="${name}_color_frame">
++    <gazebo reference="${frame}">
+         <sensor name="${name}" type="camera">
+           <camera>
++              <camera_info_topic>${gz_topic_name}/camera_info</camera_info_topic>
+               <horizontal_fov>${h_fov}</horizontal_fov>
+               <image>
+                 <width>${image_width}</width>
+@@ -40,30 +49,23 @@
+                 <format>RGB_INT8</format>
+               </image>
+               <clip>
+-                <near>0.01</near>
+-                <far>10</far>
++                <near>${near}</near>
++                <far>${far}</far>
+               </clip>
+-              <distortion>
+-                <k1>0.0</k1>
+-                <k2>0.0</k2>
+-                <k3>0.0</k3>
+-                <p1>0.0</p1>
+-                <p2>0.0</p2>
+-                <center>0.5 0.5</center>
+-              </distortion>
++              <!-- Ideal undistorted pinhole; no unsupported Ogre2 distortion pass. -->
+               <noise>
+                 <type>gaussian</type>
+                 <mean>0</mean>
+                 <stddev>0.00</stddev>
+               </noise>
+               <!-- TODO this term is deprecated but behaves better than setting
+-                  '<gz_frame_id>${name}_color_optical_frame</gz_frame_id>'
++                  '<gz_frame_id>${optical_frame}</gz_frame_id>'
+                   in the <sensor> namespace -->
+-              <optical_frame_id>${name}_color_optical_frame</optical_frame_id>
++              <optical_frame_id>${optical_frame}</optical_frame_id>
+               <triggered>${triggered}</triggered>
+               <trigger_topic>${name}/trigger</trigger_topic>
+           </camera>
+-          <!-- <gz_frame_id>${name}_color_optical_frame</gz_frame_id> -->
++          <!-- <gz_frame_id>${optical_frame}</gz_frame_id> -->
+           <always_on>1</always_on>
+           <update_rate>${fps}</update_rate>
+           <topic>${gz_topic_name}/image</topic>
+--- upstream/depth_camera.gazebo.xacro
++++ compat/depth_camera.gazebo.xacro
+@@ -1,4 +1,8 @@
+ <?xml version="1.0"?>
++<!-- Derived from locusrobotics/gz_sensor_descriptions bf438856e58ec0af2ff2be04066b6942a77eadf3.
++     BSD-3-Clause; see LICENSE.locus.txt. Local changes: independent frames,
++     configurable clipping, camera_info topic, duplicate parameter removed.
++     Upstream comments below describe original limitations; see README for this adapter. -->
+ <robot name="gazebo_depth" xmlns:xacro="http://www.ros.org/wiki/xacro" xmlns:gz="http://gazebosim.org/schema">
+ 
+ <!--
+@@ -18,12 +22,15 @@
+   name:=camera
+   fps:=15
+   triggered:=false
+-  triggered:=false
+   gz_topic_name:=camera
+   image_width:=1280
+   image_height:=720
+   h_fov
+-  v_fov">
++  v_fov
++  frame:=${name}_depth_frame
++  optical_frame:=${name}_depth_optical_frame
++  near:=0.45
++  far:=3.0">
+ 
+     <!--
+     We need to assume the data is coming from the `_color_optical_frame`
+@@ -32,29 +39,29 @@
+     Note you will need to use `camera_info` from the RGB camera so settings should match.
+     -->
+ 
+-    <gazebo reference="${name}_color_frame">
++    <gazebo reference="${frame}">
+         <sensor name="${name}_depth" type="depth_camera">
+           <camera>
+             <!-- TODO the depth camera_info is not working and does not publish to this topic -->
+-            <camera_info_topic>${gz_topic_name}/depth/camera_info</camera_info_topic>
++            <camera_info_topic>${gz_topic_name}/camera_info</camera_info_topic>
+             <horizontal_fov>${h_fov}</horizontal_fov>
+             <image>
+               <width>${image_width}</width>
+               <height>${image_height}</height>
+             </image>
+             <clip>
+-              <near>0.1</near>
+-              <far>10</far>
++              <near>${near}</near>
++              <far>${far}</far>
+             </clip>
+             <!-- TODO this term is deprecated but behaves better than setting
+-                '<gz_frame_id>${name}_color_optical_frame</gz_frame_id>'
++                '<gz_frame_id>${optical_frame}</gz_frame_id>'
+                 in the <sensor> namespace -->
+-            <optical_frame_id>${name}_color_optical_frame</optical_frame_id>
++            <optical_frame_id>${optical_frame}</optical_frame_id>
+             <triggered>${triggered}</triggered>
+             <trigger_topic>${name}/trigger</trigger_topic>
+           </camera>
+           <!-- TODO once camera_info is working make this frame configurable -->
+-          <!-- <gz_frame_id>${name}_color_optical_frame</gz_frame_id> -->
++          <!-- <gz_frame_id>${optical_frame}</gz_frame_id> -->
+           <always_on>1</always_on>
+           <update_rate>${fps}</update_rate>
+           <topic>${gz_topic_name}/depth_image</topic>

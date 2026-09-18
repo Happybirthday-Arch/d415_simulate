@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<robot name="d415_test_mount" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:arg name="config" default="$(find bridge_d415_sim)/config/camera.yaml"/>
+  <xacro:property name="cfg" value="${xacro.load_yaml('$(arg config)')}"/>
+  <xacro:include filename="$(find bridge_d415_sim)/urdf/d415_module.xacro"/>
+  <link name="camera_mount">
+    <inertial><mass value="0.1"/><inertia ixx="0.0001" iyy="0.0001" izz="0.0001" ixy="0" ixz="0" iyz="0"/></inertial>
+    <visual><origin xyz="0 0 -0.05"/><geometry><box size="0.04 0.04 0.1"/></geometry><material name="mount_gray"><color rgba="0.2 0.2 0.2 1"/></material></visual>
+    <collision><origin xyz="0 0 -0.05"/><geometry><box size="0.04 0.04 0.1"/></geometry></collision>
+  </link>
+  <xacro:bridge_d415 parent="camera_mount" cfg="${cfg}"><origin xyz="0 0 0" rpy="0 0 0"/></xacro:bridge_d415>
+  <gazebo><static>true</static></gazebo>
+</robot>

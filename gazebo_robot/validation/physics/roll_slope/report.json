@@ -1,0 +1,49 @@
+{
+  "name": "roll_slope",
+  "world": "adhesion_slope",
+  "seconds_requested": 2,
+  "step": 0.001,
+  "brake_fixture": false,
+  "steering_torque_Nm": 0,
+  "wheel_torque_Nm": -0.31,
+  "initial_steering_speed_rad_s": 0,
+  "returncode": 0,
+  "wall_seconds": 2.52580877399987,
+  "expect": "attached",
+  "samples": 2000,
+  "final_time": 2.0,
+  "complete": true,
+  "max_steering_deg": 3.153603729090471,
+  "force_min_N": [
+    200.0,
+    200.0
+  ],
+  "force_max_N": [
+    200.0,
+    200.0
+  ],
+  "gap_range_m": [
+    -4.1308423359e-07,
+    -3.5161332658e-08
+  ],
+  "final_position_m": [
+    -0.347143425553,
+    0.00142727096823,
+    0.391691101684
+  ],
+  "final_rpy_rad": [
+    -0.0549550025271,
+    0.783884945441,
+    -0.0777573233521
+  ],
+  "wheel_angle_change_rad": [
+    -16.586641468547704,
+    -16.580427530152313
+  ],
+  "contact_steps": 1500,
+  "no_server_errors": true,
+  "passed": true,
+  "distance_m": 0.5224432132276436,
+  "wheel_travel_m": 0.5223813367295252,
+  "rolling_passed": true
+}

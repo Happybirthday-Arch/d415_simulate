@@ -1,0 +1,46 @@
+{
+  "name": "hole",
+  "world": "hole",
+  "seconds_requested": 1,
+  "step": 0.001,
+  "brake_fixture": false,
+  "steering_torque_Nm": 0,
+  "wheel_torque_Nm": 0,
+  "initial_steering_speed_rad_s": 0,
+  "returncode": 0,
+  "wall_seconds": 2.2732903760002046,
+  "expect": "detached",
+  "samples": 1000,
+  "final_time": 1.0,
+  "complete": true,
+  "max_steering_deg": 1.2214993454008336e-15,
+  "force_min_N": [
+    0.0,
+    0.0
+  ],
+  "force_max_N": [
+    0.0,
+    0.0
+  ],
+  "gap_range_m": [
+    1.0,
+    1.0
+  ],
+  "final_position_m": [
+    -1.80454709271e-17,
+    -5.67351744774e-18,
+    -4.878305
+  ],
+  "final_rpy_rad": [
+    -5.67349278668e-16,
+    9.60568513619e-16,
+    5.1103010712e-18
+  ],
+  "wheel_angle_change_rad": [
+    -8.939062135410302e-16,
+    -8.454914510426723e-16
+  ],
+  "contact_steps": 0,
+  "no_server_errors": true,
+  "passed": true
+}

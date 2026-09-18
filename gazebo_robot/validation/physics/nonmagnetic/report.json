@@ -1,0 +1,46 @@
+{
+  "name": "nonmagnetic",
+  "world": "nonmagnetic",
+  "seconds_requested": 1,
+  "step": 0.001,
+  "brake_fixture": false,
+  "steering_torque_Nm": 0,
+  "wheel_torque_Nm": 0,
+  "initial_steering_speed_rad_s": 0,
+  "returncode": 0,
+  "wall_seconds": 2.3245658669998193,
+  "expect": "detached",
+  "samples": 1000,
+  "final_time": 1.0,
+  "complete": true,
+  "max_steering_deg": 7.792047470046177e-09,
+  "force_min_N": [
+    0.0,
+    0.0
+  ],
+  "force_max_N": [
+    0.0,
+    0.0
+  ],
+  "gap_range_m": [
+    1.0,
+    1.0
+  ],
+  "final_position_m": [
+    1.01870549508e-09,
+    9.77524075007e-11,
+    0.0314998876877
+  ],
+  "final_rpy_rad": [
+    -3.11507027204e-09,
+    -1.70576633673e-07,
+    -9.62720686304e-12
+  ],
+  "wheel_angle_change_rad": [
+    1.8505090742901161e-07,
+    1.8334054616401151e-07
+  ],
+  "contact_steps": 500,
+  "no_server_errors": true,
+  "passed": true
+}

@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "name": "pull_off",
+      "world": "robot_bench",
+      "seconds_requested": 0.5,
+      "step": 0.001,
+      "brake_fixture": false,
+      "steering_torque_Nm": 0,
+      "wheel_torque_Nm": 0,
+      "initial_steering_speed_rad_s": 0,
+      "returncode": 0,
+      "wall_seconds": 2.269509760999881,
+      "expect": "observe",
+      "samples": 500,
+      "final_time": 0.5,
+      "complete": true,
+      "max_steering_deg": 14.900000021190554,
+      "force_min_N": [
+        0.0,
+        0.0
+      ],
+      "force_max_N": [
+        0.0,
+        0.0
+      ],
+      "gap_range_m": [
+        1.0,
+        1.0
+      ],
+      "final_position_m": [
+        -0.00862565921878,
+        -0.0153236748353,
+        9.43171195765
+      ],
+      "final_rpy_rad": [
+        -2.32350396948,
+        -0.318383971309,
+        0.209515309463
+      ],
+      "wheel_angle_change_rad": [
+        -1.3652072160091804,
+        -1.3116485408016259
+      ],
+      "contact_steps": 0,
+      "no_server_errors": true,
+      "passed": true,
+      "release_verified": true
+    }
+  ]
+}

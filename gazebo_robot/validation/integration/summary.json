@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "checks": {
+    "attachment": true,
+    "bench": true,
+    "bridge": true,
+    "keyboard": true,
+    "lifecycle": true,
+    "full": true,
+    "adhesion_slope": true,
+    "adhesion_wall": true,
+    "adhesion_ceiling": true,
+    "full_topics_present": true,
+    "rgb_only_files": true,
+    "left_turn_direction": true,
+    "right_turn_direction": true
+  },
+  "support_length_m": 0.03,
+  "camera_bottom_xyz_m": [
+    0.04213,
+    0,
+    0.087
+  ],
+  "straight_speed_m_s": 0.04949078500202846,
+  "turn_yaw_changes_deg": {
+    "left": 30.659202951499125,
+    "right": -32.22258181752635
+  },
+  "max_steer_deg": 14.141494373615197,
+  "depth_valid_fraction_in_bridge": 0.8722699652777778,
+  "full_recorded_topics": {
+    "/tf_static": 1,
+    "/robot/drive_status": 541,
+    "/robot/drive_command": 256,
+    "/joint_states": 542,
+    "/robot/ground_truth": 542,
+    "/d415/depth/image_raw": 173,
+    "/d415/color/camera_info": 173,
+    "/tf": 1084,
+    "/d415/depth/camera_info": 174,
+    "/d415/color/image_raw": 174,
+    "/clock": 5709
+  },
+  "limitations": [
+    "Fortress sensor scheduling may pause after a world reset until simulation catches up to the previous next-frame time. Restart for immediate fresh capture.",
+    "No arbitrary edge transitions or full-bridge route coverage are claimed."
+  ],
+  "reports": {
+    "bench": "robot_bench_rgb/report.json",
+    "bridge": "bridge_robot_rgb/report.json",
+    "keyboard": "gui/report.json",
+    "holding": "holding/report.json",
+    "lifecycle": "lifecycle/report.json"
+  }
+}

@@ -1,0 +1,58 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ""
+  Global Options:
+    Fixed Frame: world
+    Background Color: 40; 40; 40
+    Frame Rate: 30
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+      Cell Size: 1
+      Plane Cell Count: 20
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: true
+      Show Axes: true
+      Show Names: false
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Depth points
+      Enabled: true
+      Topic:
+        Value: /d415/depth/points
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        Depth: 5
+      Style: Points
+      Size (Pixels): 2
+      Color Transformer: AxisColor
+      Position Transformer: XYZ
+    - Class: rviz_default_plugins/Image
+      Name: RGB
+      Enabled: true
+      Topic:
+        Value: /d415/color/image_raw
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        Depth: 5
+    - Class: rviz_default_plugins/Image
+      Name: Depth preview
+      Enabled: true
+      Topic:
+        Value: /d415/depth/preview
+        Reliability Policy: Best Effort
+        Durability Policy: Volatile
+        Depth: 5
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 5
+      Pitch: 0.5
+      Yaw: 0.8
+      Focal Point: {X: 0, Y: 0, Z: 1}
+Window Geometry:
+  Width: 1280
+  Height: 800

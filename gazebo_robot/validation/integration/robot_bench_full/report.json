@@ -1,0 +1,64 @@
+{
+  "world": "robot_bench",
+  "mode": "full",
+  "phases": {
+    "neutral": [
+      0.14900000000000002,
+      1.161
+    ],
+    "forward": [
+      1.161,
+      4.179
+    ],
+    "stop": [
+      4.179,
+      6.179
+    ]
+  },
+  "tf_at_rgb_stamp": true,
+  "rgb_frame": "d415_color_optical_frame",
+  "depth_encoding": "32FC1",
+  "depth_valid_fraction": 0.17777777777777778,
+  "streams": {
+    "/d415/color/camera_info": 194,
+    "/d415/depth/camera_info": 194,
+    "/d415/color/image_raw": 177,
+    "/d415/depth/image_raw": 166,
+    "/d415/depth/points": 129,
+    "/d415/depth/preview": 158
+  },
+  "max_steer_deg": 0.003576192070428702,
+  "neutral": {
+    "mean_rpm": [
+      -0.00017078575886528676,
+      -0.00017090390539100582
+    ],
+    "mean_steer_deg": -0.003548034713755697
+  },
+  "forward": {
+    "mean_rpm": [
+      15.004570834294906,
+      15.004571769448628
+    ],
+    "mean_steer_deg": -0.0006232808670279983
+  },
+  "stop": {
+    "mean_rpm": [
+      -8.145927249234024e-08,
+      -2.3036775184541968e-07
+    ],
+    "mean_steer_deg": -0.0003399206746906526
+  },
+  "forward_measured_m_s": 0.04949067297475919,
+  "checks": {
+    "steering_limit": true,
+    "straight_wheel_speed": true,
+    "straight_ground_speed": true,
+    "stop": true,
+    "image_tf": true,
+    "depth_encoding": true
+  },
+  "passed": true,
+  "wall_seconds": 10.989141860000018,
+  "launch_returncode": 0
+}

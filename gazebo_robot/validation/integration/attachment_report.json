@@ -1,0 +1,18 @@
+{
+  "support_length_m": 0.03,
+  "camera_front_x_m": 0.05200000000000002,
+  "front_flush_error_m": 2.0816681711721685e-17,
+  "camera_bottom_z_m": 0.08699999997764826,
+  "camera_top_z_m": 0.11000000002235175,
+  "support_footprint_samples": 709,
+  "support_footprint_covered": true,
+  "minimum_vertical_separation_m": {
+    "front_wheel": 0.025505609780550005,
+    "front_motor": 0.029512690350413325,
+    "front_steering": 0.00599999722838402,
+    "rear_wheel": 0.02550559860467911,
+    "rear_motor": 0.02951267917454243
+  },
+  "separation_method": "Positive Z interval separation for all moving meshes, invariant under every steering angle; rod/chassis attachment contact intentional.",
+  "passed": true
+}

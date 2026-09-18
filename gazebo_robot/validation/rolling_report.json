@@ -1,0 +1,250 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "name": "roll_floor",
+      "world": "robot_bench",
+      "seconds_requested": 2,
+      "step": 0.001,
+      "brake_fixture": false,
+      "steering_torque_Nm": 0,
+      "wheel_torque_Nm": 0.01,
+      "initial_steering_speed_rad_s": 0,
+      "returncode": 0,
+      "wall_seconds": 2.524382403000345,
+      "expect": "attached",
+      "samples": 2000,
+      "final_time": 2.0,
+      "complete": true,
+      "max_steering_deg": 0.001672055951205407,
+      "force_min_N": [
+        200.0,
+        200.0
+      ],
+      "force_max_N": [
+        200.0,
+        200.0
+      ],
+      "gap_range_m": [
+        -4.52381012976e-07,
+        -3.59920767495e-08
+      ],
+      "final_position_m": [
+        0.351903926256,
+        -6.08903524887e-06,
+        0.0314999631054
+      ],
+      "final_rpy_rad": [
+        2.70593621835e-09,
+        -1.98185770777e-07,
+        -2.67939205749e-05
+      ],
+      "wheel_angle_change_rad": [
+        11.171401523430127,
+        11.171401963838074
+      ],
+      "contact_steps": 1500,
+      "no_server_errors": true,
+      "passed": true,
+      "distance_m": 0.3519025462207505,
+      "wheel_travel_m": 0.35189915492447416,
+      "rolling_passed": true
+    },
+    {
+      "name": "roll_ceiling",
+      "world": "adhesion_ceiling",
+      "seconds_requested": 2,
+      "step": 0.001,
+      "brake_fixture": false,
+      "steering_torque_Nm": 0,
+      "wheel_torque_Nm": 0.01,
+      "initial_steering_speed_rad_s": 0,
+      "returncode": 0,
+      "wall_seconds": 2.4742896600000677,
+      "expect": "attached",
+      "samples": 2000,
+      "final_time": 2.0,
+      "complete": true,
+      "max_steering_deg": 0.0016720557079389865,
+      "force_min_N": [
+        200.0,
+        200.0
+      ],
+      "force_max_N": [
+        200.0,
+        200.0
+      ],
+      "gap_range_m": [
+        -3.17727477835e-07,
+        -3.14770960616e-08
+      ],
+      "final_position_m": [
+        0.358199866212,
+        6.2599305764e-06,
+        -0.0314999676846
+      ],
+      "final_rpy_rad": [
+        -3.14159264464,
+        1.98835531899e-07,
+        2.68264546177e-05
+      ],
+      "wheel_angle_change_rad": [
+        11.371272634430126,
+        11.371273076238074
+      ],
+      "contact_steps": 1500,
+      "no_server_errors": true,
+      "passed": true,
+      "distance_m": 0.35819848345345157,
+      "wheel_travel_m": 0.35819509494302415,
+      "rolling_passed": true
+    },
+    {
+      "name": "roll_wall",
+      "world": "adhesion_wall",
+      "seconds_requested": 2,
+      "step": 0.001,
+      "brake_fixture": false,
+      "steering_torque_Nm": 0,
+      "wheel_torque_Nm": -0.43,
+      "initial_steering_speed_rad_s": 0,
+      "returncode": 0,
+      "wall_seconds": 2.5244837330001246,
+      "expect": "attached",
+      "samples": 2000,
+      "final_time": 2.0,
+      "complete": true,
+      "max_steering_deg": 2.288993462754946,
+      "force_min_N": [
+        200.0,
+        200.0
+      ],
+      "force_max_N": [
+        200.0,
+        200.0
+      ],
+      "gap_range_m": [
+        -3.80452305666e-07,
+        -3.27796532279e-08
+      ],
+      "final_position_m": [
+        0.0314999655105,
+        0.00102826695235,
+        0.448643154161
+      ],
+      "final_rpy_rad": [
+        -1.57079335602,
+        1.5308650362,
+        -1.57079333681
+      ],
+      "wheel_angle_change_rad": [
+        -14.24346917183939,
+        -14.24550370494871
+      ],
+      "contact_steps": 1500,
+      "no_server_errors": true,
+      "passed": true,
+      "distance_m": 0.44865282826116215,
+      "wheel_travel_m": 0.4487013228094126,
+      "rolling_passed": true
+    },
+    {
+      "name": "roll_slope",
+      "world": "adhesion_slope",
+      "seconds_requested": 2,
+      "step": 0.001,
+      "brake_fixture": false,
+      "steering_torque_Nm": 0,
+      "wheel_torque_Nm": -0.31,
+      "initial_steering_speed_rad_s": 0,
+      "returncode": 0,
+      "wall_seconds": 2.52580877399987,
+      "expect": "attached",
+      "samples": 2000,
+      "final_time": 2.0,
+      "complete": true,
+      "max_steering_deg": 3.153603729090471,
+      "force_min_N": [
+        200.0,
+        200.0
+      ],
+      "force_max_N": [
+        200.0,
+        200.0
+      ],
+      "gap_range_m": [
+        -4.1308423359e-07,
+        -3.5161332658e-08
+      ],
+      "final_position_m": [
+        -0.347143425553,
+        0.00142727096823,
+        0.391691101684
+      ],
+      "final_rpy_rad": [
+        -0.0549550025271,
+        0.783884945441,
+        -0.0777573233521
+      ],
+      "wheel_angle_change_rad": [
+        -16.586641468547704,
+        -16.580427530152313
+      ],
+      "contact_steps": 1500,
+      "no_server_errors": true,
+      "passed": true,
+      "distance_m": 0.5224432132276436,
+      "wheel_travel_m": 0.5223813367295252,
+      "rolling_passed": true
+    },
+    {
+      "name": "roll_bridge",
+      "world": "bridge_robot",
+      "seconds_requested": 2,
+      "step": 0.001,
+      "brake_fixture": false,
+      "steering_torque_Nm": 0,
+      "wheel_torque_Nm": 0.01,
+      "initial_steering_speed_rad_s": 0,
+      "returncode": 0,
+      "wall_seconds": 6.883664903999943,
+      "expect": "attached",
+      "samples": 2000,
+      "final_time": 2.0,
+      "complete": true,
+      "max_steering_deg": 0.001672055951205407,
+      "force_min_N": [
+        200.0,
+        200.0
+      ],
+      "force_max_N": [
+        200.0,
+        200.0
+      ],
+      "gap_range_m": [
+        -4.52379525791e-07,
+        -3.59920769508e-08
+      ],
+      "final_position_m": [
+        6.0890353625e-06,
+        -1.14809607392,
+        0.0414999628819
+      ],
+      "final_rpy_rad": [
+        2.70593641097e-09,
+        -1.98185768325e-07,
+        1.57076953288
+      ],
+      "wheel_angle_change_rad": [
+        11.171401517930127,
+        11.171401958338075
+      ],
+      "contact_steps": 1500,
+      "no_server_errors": true,
+      "passed": true,
+      "distance_m": 0.35190254603999815,
+      "wheel_travel_m": 0.3518991547512242,
+      "rolling_passed": true
+    }
+  ]
+}

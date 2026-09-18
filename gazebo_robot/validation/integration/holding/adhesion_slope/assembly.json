@@ -1,0 +1,238 @@
+{
+  "assembly": {
+    "support_length": 0.03,
+    "support_diameter": 0.01,
+    "support_density": 2700.0,
+    "support_bottom": [
+      0.04213,
+      0.0,
+      0.057
+    ],
+    "camera_mass": 0.072,
+    "preserve_total_mass": true
+  },
+  "rod_mass": 0.0063617251235193305,
+  "camera_mass": 0.072,
+  "base_mass": 0.7962190308204765,
+  "total_mass": 2.7,
+  "camera_bottom_xyz": [
+    0.04213,
+    0.0,
+    0.087
+  ],
+  "base_com": [
+    -0.01206940379555667,
+    0.021045898122979724,
+    0.03424676546872754
+  ],
+  "inertia_eigenvalues": [
+    0.0009153376984960622,
+    0.002244979730449207,
+    0.002662419075272226
+  ],
+  "static_tf": [
+    {
+      "parent": "base_link",
+      "child": "camera_support_link",
+      "xyz": [
+        0.04213,
+        0.0,
+        0.057
+      ],
+      "quat": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "parent": "camera_support_link",
+      "child": "d415_bottom_screw_frame",
+      "xyz": [
+        0.0,
+        0.0,
+        0.03
+      ],
+      "quat": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "parent": "d415_bottom_screw_frame",
+      "child": "d415_link",
+      "xyz": [
+        0.0,
+        0.02,
+        0.0115
+      ],
+      "quat": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "parent": "d415_link",
+      "child": "d415_depth_frame",
+      "xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "parent": "d415_depth_frame",
+      "child": "d415_depth_optical_frame",
+      "xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat": [
+        -0.5,
+        0.4999999999999999,
+        -0.5,
+        0.5000000000000001
+      ]
+    },
+    {
+      "parent": "d415_link",
+      "child": "d415_infra1_frame",
+      "xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "parent": "d415_infra1_frame",
+      "child": "d415_infra1_optical_frame",
+      "xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat": [
+        -0.5,
+        0.4999999999999999,
+        -0.5,
+        0.5000000000000001
+      ]
+    },
+    {
+      "parent": "d415_link",
+      "child": "d415_infra2_frame",
+      "xyz": [
+        0.0,
+        -0.055,
+        0.0
+      ],
+      "quat": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "parent": "d415_infra2_frame",
+      "child": "d415_infra2_optical_frame",
+      "xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat": [
+        -0.5,
+        0.4999999999999999,
+        -0.5,
+        0.5000000000000001
+      ]
+    },
+    {
+      "parent": "d415_link",
+      "child": "d415_color_frame",
+      "xyz": [
+        0.0,
+        0.015,
+        0.0
+      ],
+      "quat": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "parent": "d415_color_frame",
+      "child": "d415_color_optical_frame",
+      "xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat": [
+        -0.5,
+        0.4999999999999999,
+        -0.5,
+        0.5000000000000001
+      ]
+    }
+  ],
+  "link_origins": {
+    "base_link": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "front_steering_link": [
+      0.026000008736999997,
+      0.0,
+      0.046999994064
+    ],
+    "front_wheel_link": [
+      0.03499999999995763,
+      1.6179558382997672e-06,
+      -5.996107468181355e-09
+    ],
+    "rear_wheel_link": [
+      -0.035000000000036904,
+      -1.6179568045025794e-06,
+      5.99548568083752e-09
+    ]
+  },
+  "drive": {
+    "rpm": 15.0,
+    "steer_deg": 14.0,
+    "rpm_slew": 30.0,
+    "steer_slew_deg": 30.0,
+    "wheel_torque": 0.8,
+    "steer_torque": 5.0,
+    "wheel_kp": 0.08,
+    "wheel_ki": 0.8,
+    "steer_kp": 60.0,
+    "steer_kd": 1.0,
+    "steer_ki": 60.0,
+    "timeout": 0.25
+  },
+  "source_world": "adhesion_slope",
+  "rigid_fusion": "Camera/support visual, collision, sensors and inertia fused into base_link; static TF retained."
+}

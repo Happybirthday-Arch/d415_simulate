@@ -1,0 +1,325 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="bridge">
+    <static>true</static>
+    <link name="bridge_link">
+      <visual name="bottom_plane_visual">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/bottom_plane.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.43 0.43 0.46 1</ambient>
+          <diffuse>0.43 0.43 0.46 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="bottom_plane_collision">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/bottom_plane.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="front_plane_01_visual">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/front_plane_01.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.34 0.34 0.36 1</ambient>
+          <diffuse>0.34 0.34 0.36 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="front_plane_01_collision">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/front_plane_01.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+      </collision>
+<!--
+      <visual name="front_plane_02_visual">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/front_plane_02.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.34 0.34 0.36 1</ambient>
+          <diffuse>0.34 0.34 0.36 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="front_plane_02_collision">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/front_plane_02.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+      </collision>
+-->
+      <visual name="front_plane_03_visual">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/front_plane_03.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.34 0.34 0.36 1</ambient>
+          <diffuse>0.34 0.34 0.36 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="front_plane_03_collision">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/front_plane_03.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="side_inner_left_01_visual">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/side_inner_left_01.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.6 0.6 0.65 1</ambient>
+          <diffuse>0.6 0.6 0.65 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="side_inner_left_01_collision">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/side_inner_left_01.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="side_inner_left_02_visual">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/side_inner_left_02.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.6 0.6 0.65 1</ambient>
+          <diffuse>0.6 0.6 0.65 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="side_inner_left_02_collision">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/side_inner_left_02.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="side_inner_left_03_visual">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/side_inner_left_03.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.6 0.6 0.65 1</ambient>
+          <diffuse>0.6 0.6 0.65 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="side_inner_left_03_collision">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/side_inner_left_03.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="side_inner_left_04_visual">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/side_inner_left_04.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.6 0.6 0.65 1</ambient>
+          <diffuse>0.6 0.6 0.65 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="side_inner_left_04_collision">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/side_inner_left_04.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="side_inner_right_01_visual">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/side_inner_right_01.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.6 0.6 0.65 1</ambient>
+          <diffuse>0.6 0.6 0.65 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="side_inner_right_01_collision">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/side_inner_right_01.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="side_inner_right_02_visual">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/side_inner_right_02.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.6 0.6 0.65 1</ambient>
+          <diffuse>0.6 0.6 0.65 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="side_inner_right_02_collision">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/side_inner_right_02.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="side_inner_right_03_visual">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/side_inner_right_03.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.6 0.6 0.65 1</ambient>
+          <diffuse>0.6 0.6 0.65 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="side_inner_right_03_collision">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/side_inner_right_03.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="side_inner_right_04_visual">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/side_inner_right_04.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.6 0.6 0.65 1</ambient>
+          <diffuse>0.6 0.6 0.65 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="side_inner_right_04_collision">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/side_inner_right_04.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="side_outer_left_visual">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/side_outer_left.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.6 0.6 0.65 1</ambient>
+          <diffuse>0.6 0.6 0.65 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="side_outer_left_collision">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/side_outer_left.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="side_outer_right_visual">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/side_outer_right.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.6 0.6 0.65 1</ambient>
+          <diffuse>0.6 0.6 0.65 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="side_outer_right_collision">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/side_outer_right.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="top_plane_visual">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/top_plane.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.43 0.43 0.46 1</ambient>
+          <diffuse>0.43 0.43 0.46 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+      <collision name="top_plane_collision">
+        <geometry>
+          <mesh>
+            <uri>model://bridge/meshes/top_plane.stl</uri>
+            <scale>0.001 0.001 0.001</scale>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+</sdf>

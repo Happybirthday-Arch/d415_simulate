@@ -1,0 +1,20 @@
+# SI units. User supplied masses and adhesion force.
+mass:
+  total: 2.7
+  wheel: 0.7
+  motor: 0.31
+steering:
+  hard_limit_deg: 15.0
+  stop_limit_deg: 14.9
+  damping: 0.02
+wheel:
+  radius: 0.0315
+  width: 0.0325
+  friction: 0.8
+  damping: 0.0001
+magnet:
+  force_per_wheel: 200.0
+  capture_gap: 0.0005
+  release_gap: 0.001
+physics:
+  step: 0.001

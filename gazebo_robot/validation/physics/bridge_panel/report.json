@@ -1,0 +1,46 @@
+{
+  "name": "bridge_panel",
+  "world": "bridge_panel",
+  "seconds_requested": 3.0,
+  "step": 0.001,
+  "brake_fixture": true,
+  "steering_torque_Nm": 0,
+  "wheel_torque_Nm": 0,
+  "initial_steering_speed_rad_s": 0,
+  "returncode": 0,
+  "wall_seconds": 49.08779718300002,
+  "expect": "attached",
+  "samples": 3000,
+  "final_time": 3.0,
+  "complete": true,
+  "max_steering_deg": 0.0013716205470598378,
+  "force_min_N": [
+    200.0,
+    200.0
+  ],
+  "force_max_N": [
+    200.0,
+    200.0
+  ],
+  "gap_range_m": [
+    -8.26570623141e-07,
+    -3.83310221064e-08
+  ],
+  "final_position_m": [
+    5.00000382535,
+    0.360500845887,
+    1.49999192268
+  ],
+  "final_rpy_rad": [
+    1.57079734577,
+    -6.41304882489e-06,
+    -1.4236974051e-06
+  ],
+  "wheel_angle_change_rad": [
+    5.31814227794437e-11,
+    -5.3257370027959e-11
+  ],
+  "contact_steps": 2500,
+  "no_server_errors": true,
+  "passed": true
+}

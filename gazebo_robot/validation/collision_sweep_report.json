@@ -1,0 +1,13 @@
+{
+  "angle_step_deg": 0.1,
+  "pairs": [
+    {"a":"front_wheel","b":"rear_wheel","min_gap_m":0.00356841085483,"angle_deg":15,"collision":false},
+    {"a":"front_motor","b":"rear_wheel","min_gap_m":0.00715321284209,"angle_deg":-15,"collision":false},
+    {"a":"front_wheel","b":"rear_motor","min_gap_m":0.0156065100451,"angle_deg":-3.5,"collision":false},
+    {"a":"front_motor","b":"rear_motor","min_gap_m":0.0493397188228,"angle_deg":-15,"collision":false},
+    {"a":"front_wheel","b":"robot_chassis","min_gap_m":0.00994132804804,"angle_deg":1.7,"collision":false},
+    {"a":"front_motor","b":"robot_chassis","min_gap_m":0.0235126856714,"angle_deg":0.9,"collision":false},
+    {"a":"front_steering","b":"rear_wheel","min_gap_m":0.00281278018442,"angle_deg":-15,"collision":false}
+  ],
+  "passed": true
+}

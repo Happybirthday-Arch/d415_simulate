@@ -1,0 +1,46 @@
+{
+  "name": "bridge_underside",
+  "world": "bridge_underside",
+  "seconds_requested": 3.0,
+  "step": 0.001,
+  "brake_fixture": true,
+  "steering_torque_Nm": 0,
+  "wheel_torque_Nm": 0,
+  "initial_steering_speed_rad_s": 0,
+  "returncode": 0,
+  "wall_seconds": 3.0255693359999896,
+  "expect": "attached",
+  "samples": 3000,
+  "final_time": 3.0,
+  "complete": true,
+  "max_steering_deg": 0.0013716205470598378,
+  "force_min_N": [
+    200.0,
+    200.0
+  ],
+  "force_max_N": [
+    200.0,
+    200.0
+  ],
+  "gap_range_m": [
+    -7.50571135827e-07,
+    -6.44636837271e-07
+  ],
+  "final_position_m": [
+    1.76669507923e-06,
+    -1.49999618221,
+    -0.031499312117
+  ],
+  "final_rpy_rad": [
+    -3.14159195928,
+    1.68463369092e-06,
+    1.57078994862
+  ],
+  "wheel_angle_change_rad": [
+    1.0578822123893e-12,
+    -9.40616917689e-13
+  ],
+  "contact_steps": 2500,
+  "no_server_errors": true,
+  "passed": true
+}

@@ -1,0 +1,12 @@
+rpm: 15.0
+steer_deg: 14.0
+rpm_slew: 30.0
+steer_slew_deg: 30.0
+wheel_torque: 0.8
+steer_torque: 5.0
+wheel_kp: 0.08
+wheel_ki: 0.8
+steer_kp: 60.0
+steer_kd: 1.0
+steer_ki: 60.0
+timeout: 0.25

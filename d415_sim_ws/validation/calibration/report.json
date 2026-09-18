@@ -1,0 +1,133 @@
+{
+  "wall_seconds": 10.051640766999299,
+  "streams": {
+    "color/image_raw": {
+      "count": 305,
+      "frame_id": "d415_color_optical_frame",
+      "sim_hz": 30.303030303030308,
+      "wall_hz": 30.29536501700697,
+      "max_gap_sim_s": 0.03300000000000125,
+      "nonincreasing_stamps": 0,
+      "size": [
+        640,
+        360
+      ],
+      "encoding": "rgb8"
+    },
+    "depth/image_raw": {
+      "count": 305,
+      "frame_id": "d415_depth_optical_frame",
+      "sim_hz": 30.303030303030308,
+      "wall_hz": 30.30853735701608,
+      "max_gap_sim_s": 0.03300000000000125,
+      "nonincreasing_stamps": 0,
+      "size": [
+        640,
+        360
+      ],
+      "encoding": "32FC1"
+    },
+    "color/camera_info": {
+      "count": 305,
+      "frame_id": "d415_color_optical_frame",
+      "sim_hz": 30.303030303030308,
+      "wall_hz": 30.250763045496925,
+      "max_gap_sim_s": 0.03300000000000125,
+      "nonincreasing_stamps": 0,
+      "size": [
+        640,
+        360
+      ]
+    },
+    "depth/camera_info": {
+      "count": 305,
+      "frame_id": "d415_depth_optical_frame",
+      "sim_hz": 30.303030303030308,
+      "wall_hz": 30.261164642355507,
+      "max_gap_sim_s": 0.03300000000000125,
+      "nonincreasing_stamps": 0,
+      "size": [
+        640,
+        360
+      ]
+    },
+    "depth/points": {
+      "count": 247,
+      "frame_id": "d415_depth_optical_frame",
+      "sim_hz": 24.683925346177,
+      "wall_hz": 24.594260098120884,
+      "max_gap_sim_s": 0.13200000000000145,
+      "nonincreasing_stamps": 0,
+      "size": [
+        640,
+        360
+      ]
+    }
+  },
+  "errors": [],
+  "color_intrinsics": {
+    "k": [
+      465.6028747558594,
+      0.0,
+      320.0,
+      0.0,
+      465.60290336608887,
+      180.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "p": [
+      465.6028747558594,
+      0.0,
+      320.0,
+      0.0,
+      0.0,
+      465.60290336608887,
+      180.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  "depth_valid_fraction": 1.0,
+  "center_depth_m": 2.0,
+  "depth_intrinsics": {
+    "k": [
+      502.2993846775969,
+      0.0,
+      320.0,
+      0.0,
+      502.29938467759683,
+      180.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "p": [
+      502.2993846775969,
+      0.0,
+      320.0,
+      0.0,
+      0.0,
+      502.29938467759683,
+      180.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  "point_cloud_center_xyz": [
+    0.0,
+    0.0,
+    2.0
+  ],
+  "world_to_depth": {
+    "translation": "geometry_msgs.msg.Vector3(x=0.0, y=0.02, z=1.0115)",
+    "rotation": "geometry_msgs.msg.Quaternion(x=-0.5, y=0.4999999999999999, z=-0.5, w=0.5000000000000001)"
+  }
+}

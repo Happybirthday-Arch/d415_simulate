@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:include filename="$(find realsense2_description)/urdf/_d415.urdf.xacro"/>
+  <xacro:include filename="$(find bridge_d415_sim)/urdf/compat/rgb_camera.gazebo.xacro"/>
+  <xacro:include filename="$(find bridge_d415_sim)/urdf/compat/depth_camera.gazebo.xacro"/>
+  <!-- This reusable macro is NOT static. Only the test mount is static. -->
+  <xacro:macro name="bridge_d415" params="parent cfg *origin">
+    <xacro:sensor_d415 parent="${parent}" name="d415" use_nominal_extrinsics="true" use_mesh="true" add_plug="false">
+      <xacro:insert_block name="origin"/>
+    </xacro:sensor_d415>
+    <xacro:gazebo_rgb name="d415" gz_topic_name="/d415_sim/color"
+      fps="${cfg['fps']}" image_width="${cfg['width']}" image_height="${cfg['height']}"
+      h_fov="${cfg['color_hfov_deg'] * pi / 180}" v_fov="0"
+      frame="d415_color_frame" optical_frame="d415_color_optical_frame"
+      near="${cfg['color_near']}" far="${cfg['color_far']}"/>
+    <xacro:gazebo_depth name="d415" gz_topic_name="/d415_sim/depth"
+      fps="${cfg['fps']}" image_width="${cfg['width']}" image_height="${cfg['height']}"
+      h_fov="${cfg['depth_hfov_deg'] * pi / 180}" v_fov="0"
+      frame="d415_depth_frame" optical_frame="d415_depth_optical_frame"
+      near="${cfg['depth_near']}" far="${cfg['depth_far']}"/>
+  </xacro:macro>
+</robot>

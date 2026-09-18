@@ -1,0 +1,227 @@
+{
+  "world": "robot_bench",
+  "mode": "rgb",
+  "phases": {
+    "neutral": [
+      0.10700000000000001,
+      1.11
+    ],
+    "forward": [
+      1.11,
+      5.126
+    ],
+    "stop": [
+      5.126,
+      7.126
+    ],
+    "reverse": [
+      7.126,
+      10.128
+    ],
+    "stop_reverse": [
+      10.128,
+      11.128
+    ],
+    "left": [
+      11.128,
+      15.128
+    ],
+    "stop_left": [
+      15.128,
+      16.137
+    ],
+    "right": [
+      16.137,
+      20.16
+    ],
+    "stop_right": [
+      20.16,
+      22.177
+    ],
+    "before_timeout": [
+      22.177,
+      23.19
+    ],
+    "timeout": [
+      23.19,
+      25.207
+    ],
+    "neutral_rearm": [
+      25.207,
+      25.719
+    ],
+    "before_brake": [
+      25.719,
+      26.733
+    ],
+    "brake": [
+      26.733,
+      27.736
+    ]
+  },
+  "tf_at_rgb_stamp": true,
+  "rgb_frame": "d415_color_optical_frame",
+  "depth_encoding": "32FC1",
+  "depth_valid_fraction": 0.004340277777777778,
+  "streams": {
+    "/d415/color/camera_info": 847,
+    "/d415/depth/camera_info": 847,
+    "/d415/color/image_raw": 825,
+    "/d415/depth/image_raw": 813,
+    "/d415/depth/points": 744,
+    "/d415/depth/preview": 801
+  },
+  "max_steer_deg": 14.141494373615197,
+  "neutral": {
+    "mean_rpm": [
+      -0.00029266826007099355,
+      -0.0002927842499047413
+    ],
+    "mean_steer_deg": -0.0035499023161784525
+  },
+  "forward": {
+    "mean_rpm": [
+      14.996543304182488,
+      14.996543640102715
+    ],
+    "mean_steer_deg": -0.0002856507999174414
+  },
+  "stop": {
+    "mean_rpm": [
+      -9.591182560955543e-08,
+      -2.5408029722911143e-07
+    ],
+    "mean_steer_deg": -0.00010132249111670164
+  },
+  "reverse": {
+    "mean_rpm": [
+      -15.004728056225133,
+      -15.004728249160065
+    ],
+    "mean_steer_deg": -3.5514904312866587e-05
+  },
+  "stop_reverse": {
+    "mean_rpm": [
+      0.12696703355980293,
+      0.1269668907602272
+    ],
+    "mean_steer_deg": 4.65120603034267e-06
+  },
+  "left": {
+    "mean_rpm": [
+      14.891600702900414,
+      14.639426886064784
+    ],
+    "mean_steer_deg": 13.957226321208296
+  },
+  "stop_left": {
+    "mean_rpm": [
+      -0.03150352837280625,
+      -0.0071622798812244915
+    ],
+    "mean_steer_deg": 1.7262887833087293
+  },
+  "right": {
+    "mean_rpm": [
+      14.912331921169882,
+      14.863259187985632
+    ],
+    "mean_steer_deg": -13.953913239252646
+  },
+  "stop_right": {
+    "mean_rpm": [
+      -0.005960324998452305,
+      -0.0010441231687619006
+    ],
+    "mean_steer_deg": -0.4489726944756616
+  },
+  "before_timeout": {
+    "mean_rpm": [
+      15.126023877469075,
+      15.127731385350513
+    ],
+    "mean_steer_deg": -0.15114437183127533
+  },
+  "timeout": {
+    "mean_rpm": [
+      -0.0006811603800728985,
+      -0.0006539573322291854
+    ],
+    "mean_steer_deg": 0.0035966350168055326
+  },
+  "neutral_rearm": {
+    "mean_rpm": [
+      -0.0007066729913655816,
+      -0.0007187980494201199
+    ],
+    "mean_steer_deg": 0.026043314612321237
+  },
+  "before_brake": {
+    "mean_rpm": [
+      15.081213975707287,
+      15.076596976476887
+    ],
+    "mean_steer_deg": 0.2348946182854719
+  },
+  "brake": {
+    "mean_rpm": [
+      -0.006456361227771029,
+      -0.006476475742778705
+    ],
+    "mean_steer_deg": 0.2202710627185249
+  },
+  "forward_measured_m_s": 0.04948580460580085,
+  "checks": {
+    "steering_limit": true,
+    "straight_wheel_speed": true,
+    "straight_ground_speed": true,
+    "stop": true,
+    "image_tf": true,
+    "depth_encoding": true,
+    "left_angle": true,
+    "right_angle": true,
+    "timeout_stop": true,
+    "brake_stop": true
+  },
+  "passed": true,
+  "wall_seconds": 31.794450603999394,
+  "launch_returncode": 0,
+  "recording": {
+    "mode": "rgb",
+    "topic": "/d415/color/image_raw",
+    "fps": 30.0,
+    "bitrate": "2M",
+    "received": 828,
+    "queue_dropped": 0,
+    "written": 840,
+    "segments": [
+      {
+        "video": "rgb.mp4",
+        "start_sim_time": 0.033,
+        "frames": 840,
+        "end_sim_time": 27.985
+      }
+    ],
+    "error": null,
+    "depth_recorded": false
+  },
+  "recorded_files": [
+    "recording.json",
+    "rgb.mp4",
+    "rgb_timestamps.csv",
+    "rgb_encoder.log"
+  ],
+  "video": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 640,
+        "height": 360,
+        "duration": "28.000000",
+        "nb_frames": "840"
+      }
+    ]
+  },
+  "video_bytes": 328067
+}

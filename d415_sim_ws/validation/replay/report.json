@@ -1,0 +1,133 @@
+{
+  "wall_seconds": 10.128549590999683,
+  "streams": {
+    "color/image_raw": {
+      "count": 307,
+      "frame_id": "d415_color_optical_frame",
+      "sim_hz": 30.303030303030305,
+      "wall_hz": 30.257968202885134,
+      "max_gap_sim_s": 0.03300000000000125,
+      "nonincreasing_stamps": 0,
+      "size": [
+        640,
+        360
+      ],
+      "encoding": "rgb8"
+    },
+    "depth/image_raw": {
+      "count": 307,
+      "frame_id": "d415_depth_optical_frame",
+      "sim_hz": 30.303030303030305,
+      "wall_hz": 30.27984099446759,
+      "max_gap_sim_s": 0.03300000000000125,
+      "nonincreasing_stamps": 0,
+      "size": [
+        640,
+        360
+      ],
+      "encoding": "32FC1"
+    },
+    "color/camera_info": {
+      "count": 308,
+      "frame_id": "d415_color_optical_frame",
+      "sim_hz": 30.3030303030303,
+      "wall_hz": 30.311275628227108,
+      "max_gap_sim_s": 0.03300000000000125,
+      "nonincreasing_stamps": 0,
+      "size": [
+        640,
+        360
+      ]
+    },
+    "depth/camera_info": {
+      "count": 307,
+      "frame_id": "d415_depth_optical_frame",
+      "sim_hz": 30.303030303030305,
+      "wall_hz": 30.219252736678502,
+      "max_gap_sim_s": 0.03300000000000125,
+      "nonincreasing_stamps": 0,
+      "size": [
+        640,
+        360
+      ]
+    },
+    "depth/points": {
+      "count": 170,
+      "frame_id": "d415_depth_optical_frame",
+      "sim_hz": 16.901690169016902,
+      "wall_hz": 16.89889210018251,
+      "max_gap_sim_s": 0.1980000000000004,
+      "nonincreasing_stamps": 0,
+      "size": [
+        640,
+        360
+      ]
+    }
+  },
+  "errors": [],
+  "color_intrinsics": {
+    "k": [
+      465.6028747558594,
+      0.0,
+      320.0,
+      0.0,
+      465.60290336608887,
+      180.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "p": [
+      465.6028747558594,
+      0.0,
+      320.0,
+      0.0,
+      0.0,
+      465.60290336608887,
+      180.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  "depth_valid_fraction": 0.9686111111111111,
+  "center_depth_m": 1.9117484092712402,
+  "depth_intrinsics": {
+    "k": [
+      502.2993846775969,
+      0.0,
+      320.0,
+      0.0,
+      502.29938467759683,
+      180.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "p": [
+      502.2993846775969,
+      0.0,
+      320.0,
+      0.0,
+      0.0,
+      502.29938467759683,
+      180.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ]
+  },
+  "point_cloud_center_xyz": [
+    0.0,
+    0.0,
+    1.9120360612869263
+  ],
+  "world_to_depth": {
+    "translation": "geometry_msgs.msg.Vector3(x=-0.020000000000000004, y=-1.4982814614765536, z=1.2113708673962644)",
+    "rotation": "geometry_msgs.msg.Quaternion(x=-0.7581022795354198, y=-1.214306433183765e-16, z=1.179611963664229e-16, w=0.6521356712856615)"
+  }
+}

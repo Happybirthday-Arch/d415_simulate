@@ -1,0 +1,46 @@
+{
+  "name": "limit_-1_0.001",
+  "world": "steering_fixture",
+  "seconds_requested": 3,
+  "step": 0.001,
+  "brake_fixture": false,
+  "steering_torque_Nm": -0.5,
+  "wheel_torque_Nm": 0,
+  "initial_steering_speed_rad_s": -2,
+  "returncode": 0,
+  "wall_seconds": 2.3758087040000646,
+  "expect": "detached",
+  "samples": 3000,
+  "final_time": 3.0,
+  "complete": true,
+  "max_steering_deg": 14.900000065251005,
+  "force_min_N": [
+    0.0,
+    0.0
+  ],
+  "force_max_N": [
+    0.0,
+    0.0
+  ],
+  "gap_range_m": [
+    1.0,
+    1.0
+  ],
+  "final_position_m": [
+    0.0,
+    0.0,
+    0.3315
+  ],
+  "final_rpy_rad": [
+    0.0,
+    -0.0,
+    0.0
+  ],
+  "wheel_angle_change_rad": [
+    0.5277187151290295,
+    -0.5280155217413305
+  ],
+  "contact_steps": 0,
+  "no_server_errors": true,
+  "passed": true
+}

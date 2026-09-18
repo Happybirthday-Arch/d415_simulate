@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.8)
+project(bridge_d415_sim)
+find_package(ament_cmake REQUIRED)
+install(DIRECTORY launch urdf config worlds rviz DESTINATION share/${PROJECT_NAME})
+install(PROGRAMS scripts/camera_support.py scripts/record.py scripts/export_video.py scripts/validate.py DESTINATION lib/${PROJECT_NAME})
+ament_package()

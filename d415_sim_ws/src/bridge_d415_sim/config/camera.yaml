@@ -1,0 +1,17 @@
+# Nominal pinhole models, square pixels. Vertical FOV follows aspect ratio.
+width: 640
+height: 360
+fps: 30.0
+color_hfov_deg: 69.0
+depth_hfov_deg: 65.0
+color_near: 0.01
+color_far: 10.0
+depth_near: 0.45
+depth_far: 3.0
+# Pose of the bottom mounting frame in the bridge world (m, rad).
+x: 0.0
+y: -1.5
+z: 1.2
+roll: 0.0
+pitch: 0.15
+yaw: 1.5707963267948966

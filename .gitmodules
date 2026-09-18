@@ -1,0 +1,3 @@
+[submodule "d415_sim_ws/src/gz_sensor_descriptions"]
+	path = d415_sim_ws/src/gz_sensor_descriptions
+	url = https://github.com/locusrobotics/gz_sensor_descriptions.git

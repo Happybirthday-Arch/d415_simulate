@@ -1,0 +1,102 @@
+{
+  "world": "bridge_robot",
+  "mode": "rgb",
+  "phases": {
+    "neutral": [
+      0.07500000000000001,
+      1.08
+    ],
+    "forward": [
+      1.08,
+      4.084
+    ],
+    "stop": [
+      4.084,
+      6.084
+    ]
+  },
+  "tf_at_rgb_stamp": true,
+  "rgb_frame": "d415_color_optical_frame",
+  "depth_encoding": "32FC1",
+  "depth_valid_fraction": 0.8722699652777778,
+  "streams": {
+    "/d415/color/camera_info": 191,
+    "/d415/depth/camera_info": 191,
+    "/d415/color/image_raw": 185,
+    "/d415/depth/image_raw": 177,
+    "/d415/depth/points": 168,
+    "/d415/depth/preview": 174
+  },
+  "max_steer_deg": 0.003576192070428791,
+  "neutral": {
+    "mean_rpm": [
+      -0.00041248669702886827,
+      -0.0004126014742959958
+    ],
+    "mean_steer_deg": -0.0035509999153874516
+  },
+  "forward": {
+    "mean_rpm": [
+      15.004614821762688,
+      15.004615771579418
+    ],
+    "mean_steer_deg": -0.0006295362791315478
+  },
+  "stop": {
+    "mean_rpm": [
+      -7.203289588009083e-08,
+      -2.1701799559962733e-07
+    ],
+    "mean_steer_deg": -0.000348125761122797
+  },
+  "forward_measured_m_s": 0.04949078500202846,
+  "checks": {
+    "steering_limit": true,
+    "straight_wheel_speed": true,
+    "straight_ground_speed": true,
+    "stop": true,
+    "image_tf": true,
+    "depth_encoding": true
+  },
+  "passed": true,
+  "wall_seconds": 21.666213167999558,
+  "launch_returncode": 0,
+  "recording": {
+    "mode": "rgb",
+    "topic": "/d415/color/image_raw",
+    "fps": 30.0,
+    "bitrate": "2M",
+    "received": 185,
+    "queue_dropped": 0,
+    "written": 188,
+    "segments": [
+      {
+        "video": "rgb.mp4",
+        "start_sim_time": 0.033,
+        "frames": 188,
+        "end_sim_time": 6.271
+      }
+    ],
+    "error": null,
+    "depth_recorded": false
+  },
+  "recorded_files": [
+    "recording.json",
+    "rgb.mp4",
+    "rgb_timestamps.csv",
+    "rgb_encoder.log"
+  ],
+  "video": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 640,
+        "height": 360,
+        "duration": "6.266667",
+        "nb_frames": "188"
+      }
+    ]
+  },
+  "video_bytes": 526758
+}

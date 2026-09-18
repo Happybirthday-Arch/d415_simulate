@@ -1,0 +1,419 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "name": "bridge_floor",
+      "world": "bridge_robot",
+      "seconds_requested": 3.0,
+      "step": 0.001,
+      "brake_fixture": true,
+      "steering_torque_Nm": 0,
+      "wheel_torque_Nm": 0,
+      "initial_steering_speed_rad_s": 0,
+      "returncode": 0,
+      "wall_seconds": 8.989804608000213,
+      "expect": "attached",
+      "samples": 3000,
+      "final_time": 3.0,
+      "complete": true,
+      "max_steering_deg": 0.0013716205470598378,
+      "force_min_N": [
+        200.0,
+        200.0
+      ],
+      "force_max_N": [
+        200.0,
+        200.0
+      ],
+      "gap_range_m": [
+        -9.15784139091e-07,
+        -1.34018602896e-07
+      ],
+      "final_position_m": [
+        -1.77046116019e-06,
+        -1.49999617444,
+        0.0414991363671
+      ],
+      "final_rpy_rad": [
+        5.74664887786e-07,
+        -1.43782915443e-06,
+        1.57080270488
+      ],
+      "wheel_angle_change_rad": [
+        2.9056277106571e-12,
+        -2.8146552033539998e-12
+      ],
+      "contact_steps": 2500,
+      "no_server_errors": true,
+      "passed": true
+    },
+    {
+      "name": "bridge_ceiling",
+      "world": "bridge_ceiling",
+      "seconds_requested": 3.0,
+      "step": 0.001,
+      "brake_fixture": true,
+      "steering_torque_Nm": 0,
+      "wheel_torque_Nm": 0,
+      "initial_steering_speed_rad_s": 0,
+      "returncode": 0,
+      "wall_seconds": 12.998559319999913,
+      "expect": "attached",
+      "samples": 3000,
+      "final_time": 3.0,
+      "complete": true,
+      "max_steering_deg": 0.0001839752199357759,
+      "force_min_N": [
+        199.961028402,
+        199.961028402
+      ],
+      "force_max_N": [
+        199.961028402,
+        199.961028402
+      ],
+      "gap_range_m": [
+        2.56671209453e-05,
+        4.437826633e-05
+      ],
+      "final_position_m": [
+        3.76498751311e-06,
+        -1.50000005632,
+        2.95617702819
+      ],
+      "final_rpy_rad": [
+        -3.14158622845,
+        1.91554034861e-06,
+        1.57079975188
+      ],
+      "wheel_angle_change_rad": [
+        -1.10247358464448e-12,
+        1.04255025446359e-12
+      ],
+      "contact_steps": 2500,
+      "no_server_errors": true,
+      "passed": true
+    },
+    {
+      "name": "bridge_roof",
+      "world": "bridge_roof",
+      "seconds_requested": 3.0,
+      "step": 0.001,
+      "brake_fixture": true,
+      "steering_torque_Nm": 0,
+      "wheel_torque_Nm": 0,
+      "initial_steering_speed_rad_s": 0,
+      "returncode": 0,
+      "wall_seconds": 2.975069344000076,
+      "expect": "attached",
+      "samples": 3000,
+      "final_time": 3.0,
+      "complete": true,
+      "max_steering_deg": 0.0017193748451651745,
+      "force_min_N": [
+        199.961035656,
+        199.961035656
+      ],
+      "force_max_N": [
+        199.961035656,
+        199.961035656
+      ],
+      "gap_range_m": [
+        5.78497443252e-05,
+        6.66098480267e-05
+      ],
+      "final_position_m": [
+        -6.29136972093e-05,
+        -1.50000004367,
+        3.03145533454
+      ],
+      "final_rpy_rad": [
+        -0.00194144158168,
+        -0.000124243154494,
+        1.57081146911
+      ],
+      "wheel_angle_change_rad": [
+        -6.63185434207212e-11,
+        7.922013268988799e-11
+      ],
+      "contact_steps": 2500,
+      "no_server_errors": true,
+      "passed": true
+    },
+    {
+      "name": "bridge_underside",
+      "world": "bridge_underside",
+      "seconds_requested": 3.0,
+      "step": 0.001,
+      "brake_fixture": true,
+      "steering_torque_Nm": 0,
+      "wheel_torque_Nm": 0,
+      "initial_steering_speed_rad_s": 0,
+      "returncode": 0,
+      "wall_seconds": 3.0255693359999896,
+      "expect": "attached",
+      "samples": 3000,
+      "final_time": 3.0,
+      "complete": true,
+      "max_steering_deg": 0.0013716205470598378,
+      "force_min_N": [
+        200.0,
+        200.0
+      ],
+      "force_max_N": [
+        200.0,
+        200.0
+      ],
+      "gap_range_m": [
+        -7.50571135827e-07,
+        -6.44636837271e-07
+      ],
+      "final_position_m": [
+        1.76669507923e-06,
+        -1.49999618221,
+        -0.031499312117
+      ],
+      "final_rpy_rad": [
+        -3.14159195928,
+        1.68463369092e-06,
+        1.57078994862
+      ],
+      "wheel_angle_change_rad": [
+        1.0578822123893e-12,
+        -9.40616917689e-13
+      ],
+      "contact_steps": 2500,
+      "no_server_errors": true,
+      "passed": true
+    },
+    {
+      "name": "bridge_left_wall",
+      "world": "bridge_left_wall",
+      "seconds_requested": 3.0,
+      "step": 0.001,
+      "brake_fixture": true,
+      "steering_torque_Nm": 0,
+      "wheel_torque_Nm": 0,
+      "initial_steering_speed_rad_s": 0,
+      "returncode": 0,
+      "wall_seconds": 7.034566154000004,
+      "expect": "attached",
+      "samples": 3000,
+      "final_time": 3.0,
+      "complete": true,
+      "max_steering_deg": 0.04619886616256745,
+      "force_min_N": [
+        200.0,
+        200.0
+      ],
+      "force_max_N": [
+        200.0,
+        200.0
+      ],
+      "gap_range_m": [
+        -7.81832468752e-05,
+        -2.40881460334e-08
+      ],
+      "final_position_m": [
+        -8.9635005282,
+        -1.49998976861,
+        1.49998669677
+      ],
+      "final_rpy_rad": [
+        -1.51741267415,
+        1.57046644553,
+        -1.51741317925
+      ],
+      "wheel_angle_change_rad": [
+        4.3785693990810775e-09,
+        2.848226138175896e-09
+      ],
+      "contact_steps": 2500,
+      "no_server_errors": true,
+      "passed": true
+    },
+    {
+      "name": "bridge_right_wall",
+      "world": "bridge_right_wall",
+      "seconds_requested": 3.0,
+      "step": 0.001,
+      "brake_fixture": true,
+      "steering_torque_Nm": 0,
+      "wheel_torque_Nm": 0,
+      "initial_steering_speed_rad_s": 0,
+      "returncode": 0,
+      "wall_seconds": 5.728989852000268,
+      "expect": "attached",
+      "samples": 3000,
+      "final_time": 3.0,
+      "complete": true,
+      "max_steering_deg": 0.08055687291973308,
+      "force_min_N": [
+        200.0,
+        200.0
+      ],
+      "force_max_N": [
+        200.0,
+        200.0
+      ],
+      "gap_range_m": [
+        -7.96904582234e-05,
+        -2.16373793674e-08
+      ],
+      "final_position_m": [
+        8.96351101117,
+        -1.49999237008,
+        1.50000375782
+      ],
+      "final_rpy_rad": [
+        0.601071217263,
+        -1.57041906428,
+        -0.601070558238
+      ],
+      "wheel_angle_change_rad": [
+        6.632142444261993e-10,
+        -7.88844959482798e-09
+      ],
+      "contact_steps": 2500,
+      "no_server_errors": true,
+      "passed": true
+    },
+    {
+      "name": "bridge_panel",
+      "world": "bridge_panel",
+      "seconds_requested": 3.0,
+      "step": 0.001,
+      "brake_fixture": true,
+      "steering_torque_Nm": 0,
+      "wheel_torque_Nm": 0,
+      "initial_steering_speed_rad_s": 0,
+      "returncode": 0,
+      "wall_seconds": 49.08779718300002,
+      "expect": "attached",
+      "samples": 3000,
+      "final_time": 3.0,
+      "complete": true,
+      "max_steering_deg": 0.0013716205470598378,
+      "force_min_N": [
+        200.0,
+        200.0
+      ],
+      "force_max_N": [
+        200.0,
+        200.0
+      ],
+      "gap_range_m": [
+        -8.26570623141e-07,
+        -3.83310221064e-08
+      ],
+      "final_position_m": [
+        5.00000382535,
+        0.360500845887,
+        1.49999192268
+      ],
+      "final_rpy_rad": [
+        1.57079734577,
+        -6.41304882489e-06,
+        -1.4236974051e-06
+      ],
+      "wheel_angle_change_rad": [
+        5.31814227794437e-11,
+        -5.3257370027959e-11
+      ],
+      "contact_steps": 2500,
+      "no_server_errors": true,
+      "passed": true
+    },
+    {
+      "name": "bridge_seam",
+      "world": "bridge_seam",
+      "seconds_requested": 3.0,
+      "step": 0.001,
+      "brake_fixture": true,
+      "steering_torque_Nm": 0,
+      "wheel_torque_Nm": 0,
+      "initial_steering_speed_rad_s": 0,
+      "returncode": 0,
+      "wall_seconds": 75.25380258800033,
+      "expect": "attached",
+      "samples": 3000,
+      "final_time": 3.0,
+      "complete": true,
+      "max_steering_deg": 0.3453254535270679,
+      "force_min_N": [
+        200.0,
+        200.0
+      ],
+      "force_max_N": [
+        200.0,
+        200.0
+      ],
+      "gap_range_m": [
+        -3.34087817343e-05,
+        6.4419027847e-05
+      ],
+      "final_position_m": [
+        -8.96347905412,
+        -2.60592027184,
+        1.4999802867
+      ],
+      "final_rpy_rad": [
+        1.54169031609,
+        1.56712997695,
+        1.53809789584
+      ],
+      "wheel_angle_change_rad": [
+        -6.22436116865506e-07,
+        2.11224012489401e-07
+      ],
+      "contact_steps": 2500,
+      "no_server_errors": true,
+      "passed": true
+    },
+    {
+      "name": "bridge_hole",
+      "world": "bridge_hole",
+      "seconds_requested": 3.0,
+      "step": 0.001,
+      "brake_fixture": false,
+      "steering_torque_Nm": 0,
+      "wheel_torque_Nm": 0,
+      "initial_steering_speed_rad_s": 0,
+      "returncode": 0,
+      "wall_seconds": 38.25565930999983,
+      "expect": "detached",
+      "samples": 3000,
+      "final_time": 3.0,
+      "complete": true,
+      "max_steering_deg": 0.0,
+      "force_min_N": [
+        0.0,
+        0.0
+      ],
+      "force_max_N": [
+        0.0,
+        0.0
+      ],
+      "gap_range_m": [
+        1.0,
+        1.0
+      ],
+      "final_position_m": [
+        0.0,
+        0.3604,
+        1.5
+      ],
+      "final_rpy_rad": [
+        1.57079632679,
+        -0.0,
+        0.0
+      ],
+      "wheel_angle_change_rad": [
+        0.0,
+        0.0
+      ],
+      "contact_steps": 0,
+      "no_server_errors": true,
+      "passed": true
+    }
+  ]
+}
